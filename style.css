@@ -46,7 +46,7 @@
 
 .parental {
     width: 100vw;
-    height: 14vh;
+    height: 12vh;
     background-color: #6eb0d7;
     display: flex;
     justify-content: center;
@@ -59,4 +59,103 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.parental-body h2 {
+    font-weight: 550;
+}
+
+.first-footer {
+    width: 100vw;
+    height: 35vh;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ftr-size {
+    width: 60%;
+}
+
+.warnings{
+    height: 30%;
+}
+
+.warnings p:first-child{
+    margin-top: 5vh;
+}
+
+.warnings p {
+    font-size: 0.813rem;
+    margin-bottom: 0.313rem;
+    margin-left: 0;
+}
+
+.warnings hr {
+    margin-top: 1.25rem;
+}
+
+.warnings a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+.first-footer-links {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.first-footer-links .lists {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-footer-links .lists ul {
+    margin-bottom: 1.25rem;
+}
+
+.first-footer-links .lists ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.first-footer-links .lists ul li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+
+.first-footer-links .lists a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.first-footer-links .lists a:hover {
+    color: var(--red);
+}
+
+
+.footer-media {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-media p {
+    font-weight: bold;
+    font-size: 0.938rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer-media .icons ion-icon {
+    font-size: 25px;
+}
+
+.footer-media .icons ion-icon:not(:first-child) {
+    margin-left: 1.3rem;
 }
