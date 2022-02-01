@@ -1,2 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+#sec-four {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.ea-membership {
+    background-image: url(/Design_system/Ea-gamepass-img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+.member-text {
+    margin-left: 20%;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ea-play-logo img {
+    height: 5rem;
+    width: 15.938rem;
+    margin-bottom: 1.25rem;
+    margin-left: 0;
+}
+
+.member-text p {
+    margin: 0;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.member-text button {
+    margin-top: 1.5rem;
+}
+
+.parental {
+    width: 100vw;
+    height: 14vh;
+    background-color: #6eb0d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parental-body{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
