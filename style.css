@@ -83,3 +83,32 @@ navbar {
   font-size: large;
   font-weight: 600;
 }
+
+.gradientbar {
+  width: 100vw;
+  height: 10vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(13, 16, 66, 255),
+    rgba(128, 44, 68, 255)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gradientbar-text {
+  color: white;
+  font-size: 1.75em;
+  font-weight: 900;
+}
+
+.gradient-icon {
+  display: flex;
+  align-items: center;
+}
+
+#eaPlay:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
