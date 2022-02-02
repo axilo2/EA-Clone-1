@@ -25,18 +25,19 @@ h2 {
 }
 
 .btn {
-  height: 55px;
-  width: 155px;
+  height: 3.438rem;
+  width: 9.688rem;
   background: inherit;
   border: solid 2px;
   border-radius: 3px;
-  font-size: 100%;
+  font-size: 18px;
+  transition: 0.3s;
+  font-display: center;
 }
 
 .btn:hover {
-  height: 65px;
-  width: 165px;
-  font-size: 100%;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 p {
@@ -45,10 +46,10 @@ p {
 }
 
 .alternative {
-  background-color: rgba(8, 45, 114, 0.719);
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 300px;
-  margin-bottom: 20px;
 }
 
 .alternative_btn {
@@ -65,6 +66,8 @@ p {
 .result_btn {
   background-color: white;
   border: white;
+  font-size: large;
+  font-weight: bold;
 }
 
 .btn-giochi {
@@ -145,7 +148,6 @@ img {
   background-color: var(--gray);
 }
 
-
 /* Cards */
 
 .card-container {
@@ -208,8 +210,6 @@ img {
   margin: 0 18px;
 }
 
-
-
 .card-text p {
   font-size: 18px;
   margin-left: 0;
@@ -242,7 +242,6 @@ img {
   height: 330px;
   width: 330px;
   margin-top: 10px;
-
 }
 
 .battlefield {
@@ -269,9 +268,6 @@ img {
   background-image: url("sims4.jpg");
 }
 
-
-
-
 .card-giochi-nome {
   position: relative;
   transition: 2s;
@@ -280,15 +276,12 @@ img {
 .card-giochi-testo {
   position: relative;
   opacity: 0;
-
-
 }
 
 .card-giochi:hover .card-giochi-testo {
   opacity: 0.5;
   bottom: 40px;
   margin-left: 50px;
-
 }
 
 .card-giochi:hover .card-giochi-nome {
@@ -298,7 +291,14 @@ img {
 }
 
 .card-giochi:hover {
+
   background: url("battlefield-img.jpg");
   background: linear-gradient(90deg, rgba(59, 63, 133, 0.9251050762101716) 0%, rgba(230, 122, 125, 0.8858893899356618) 100%);
-
+  background: rgb(59, 63, 133);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 63, 133, 0.9251050762101716) 0%,
+    rgba(230, 122, 125, 0.8858893899356618) 100%
+  );
 }
+

@@ -1,0 +1,33 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    
+}
+
+.box{
+    box-sizing: border-box;
+    padding: 10px;
+    border-left: 1px solid #d1d0d0;    
+}
+
+.box:hover{
+    background: lightgray;
+    transition: 0.5s;
+}
+
+
+
+
+
