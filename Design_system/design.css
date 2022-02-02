@@ -25,18 +25,19 @@ h2 {
 }
 
 .btn {
-  height: 55px;
-  width: 155px;
+  height: 3.438rem;
+  width: 9.688rem;
   background: inherit;
   border: solid 2px;
   border-radius: 3px;
-  font-size: 100%;
+  font-size: 18px;
+  transition: 0.3s;
+  font-display: center;
 }
 
 .btn:hover {
-  height: 65px;
-  width: 165px;
-  font-size: 100%;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 p {
