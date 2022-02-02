@@ -55,7 +55,7 @@ navbar {
 
 .background-section {
   height: 75vh;
-  width: 100%;
+  width: 100vw;
   background-image: url("/Design_system/imgEA.png");
   background-size: cover;
   display: flex;
