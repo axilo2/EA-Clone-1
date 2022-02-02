@@ -70,6 +70,11 @@ p {
   font-weight: bold;
 }
 
+.btn-giochi {
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
 /*STYLE FONT*/
 @font-face {
   font-family: EA-fontlight;
@@ -212,18 +217,55 @@ img {
 }
 
 /* Cards-Giochi */
+.titolo-giochi {
+  font-family: EA-fontregular;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.sezione-giochi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .card-giochi {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px black;
-  background-image: url("");
+
+
 
   background-size: cover;
   position: relative;
   height: 330px;
-  width: 310px;
+  width: 330px;
   margin-top: 10px;
+}
+
+.battlefield {
+  background-image: url("battlefield-img.jpg");
+}
+
+.fifa {
+  background-image: url("fifa22.jpg");
+}
+
+.ittakestwo {
+  background-image: url("ittakestwo.jpg");
+}
+
+.apex {
+  background-image: url("apex.jpg");
+}
+
+.madden {
+  background-image: url("madden.jpg");
+}
+
+.thesims {
+  background-image: url("sims4.jpg");
 }
 
 .card-giochi-nome {
@@ -237,7 +279,7 @@ img {
 }
 
 .card-giochi:hover .card-giochi-testo {
-  opacity: 1;
+  opacity: 0.5;
   bottom: 40px;
   margin-left: 50px;
 }
@@ -249,6 +291,9 @@ img {
 }
 
 .card-giochi:hover {
+
+  background: url("battlefield-img.jpg");
+  background: linear-gradient(90deg, rgba(59, 63, 133, 0.9251050762101716) 0%, rgba(230, 122, 125, 0.8858893899356618) 100%);
   background: rgb(59, 63, 133);
   background: linear-gradient(
     90deg,
@@ -256,3 +301,4 @@ img {
     rgba(230, 122, 125, 0.8858893899356618) 100%
   );
 }
+
