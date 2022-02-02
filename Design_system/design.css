@@ -67,6 +67,11 @@ p {
   border: white;
 }
 
+.btn-giochi {
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
 /*STYLE FONT*/
 @font-face {
   font-family: EA-fontlight;
@@ -212,6 +217,13 @@ img {
 }
 
 /* Cards-Giochi */
+.titolo-giochi {
+  font-family: EA-fontregular;
+  text-align: center;
+  font-size: 50px;
+}
+
+
 .sezione-giochi {
   display: flex;
   flex-direction: row;
