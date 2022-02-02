@@ -247,6 +247,11 @@ navbar {
     color: var(--red);
 }
 
+.first-footer-links p {
+    margin-left: 39px;
+    font-size: 15px;
+}
+
 
 .footer-media {
     width: 20%;
@@ -343,7 +348,7 @@ navbar {
 
 .scd-ftr-links p{
     margin-top: 9px;
-    margin-left: 0;
+    margin-left: 37px;
     font-size: 15px;
     margin-bottom: 7vh;
 }
