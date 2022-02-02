@@ -159,3 +159,82 @@
 .footer-media .icons ion-icon:not(:first-child) {
     margin-left: 1.3rem;
 }
+
+.second-footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.scd-ftr-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 1.125rem;
+}
+
+.scd-ftr-nav img {
+    height: 4.5rem;
+    width: 8rem;
+    margin-left: 0;
+}
+
+.scd-ftr-nav ul li {
+    list-style: none;
+    display: inline-block;
+    justify-self: left;
+}
+
+.scd-ftr-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.scd-ftr-nav select {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.scd-ftr-nav select {
+    border: solid #c7c7c7 2px;
+    border-radius: 3px;
+    height: 3.438rem;
+    width: 11rem;
+    padding-left: 1.875rem;
+    font-size: 15px;
+    background-color: inherit;
+}
+
+.scd-ftr-links {
+    width: 40%;
+    margin-top: 2vh;
+    margin-left: 8.7rem;
+}
+
+.scd-ftr-links ul {
+    list-style: none;
+}
+
+.scd-ftr-links ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.scd-ftr-links ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.scd-ftr-links p{
+    margin-top: 9px;
+    margin-left: 0;
+    font-size: 15px;
+    margin-bottom: 7vh;
+}
