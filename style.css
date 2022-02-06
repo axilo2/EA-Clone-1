@@ -172,6 +172,10 @@ navbar {
 
 .parental-body h2 {
   font-weight: 550;
+  
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
+  
 }
 
 .first-footer {
@@ -225,6 +229,7 @@ navbar {
 
 .first-footer-links .lists ul {
   margin-bottom: 1.25rem;
+  padding-left: 0;
 }
 
 .first-footer-links .lists ul li {
@@ -247,8 +252,8 @@ navbar {
 }
 
 .first-footer-links p {
-  margin-left: 39px;
   font-size: 15px;
+  margin-left: 0;
 }
 
 .footer-media {
@@ -262,6 +267,8 @@ navbar {
   font-weight: bold;
   font-size: 0.938rem;
   margin-bottom: 1.25rem;
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
 }
 
 .footer-media .icons ion-icon {
@@ -281,10 +288,16 @@ navbar {
   background-color: #f3f3f3;
 }
 
+.scd-ftr-body {
+  width: 60%;
+}
+
 .scd-ftr-nav {
   display: flex;
   align-items: center;
   margin-top: 1.125rem;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .scd-ftr-nav img {
@@ -302,9 +315,11 @@ navbar {
 .scd-ftr-nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   margin-right: 30px;
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
 }
 
 .scd-ftr-nav select {
@@ -341,7 +356,9 @@ navbar {
   text-decoration: none;
   color: black;
   margin-right: 15px;
-  font-size: 15px;
+  font-size: 12px;
+  font-family: EA-fontregular;
+  src: url(ElectronicArtsText-Regular.woff2);
 }
 
 .scd-ftr-links p {
@@ -352,7 +369,73 @@ navbar {
 }
 
 @media screen and (max-width: 1020px) {
-  
+  .parental {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  .parental-body {
+    flex-direction: column;
+    white-space: nowrap;
+  }
+
+  .warnings, .first-footer-links {
+    width: 85%;
+    white-space: nowrap;
+  }
+
+  .warnings hr {
+    width: 100%;
+  }
+
+  .first-footer-links {
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .first-footer-links ul {
+    padding: 0;
+  }
+
+  .first-footer-links p {
+    margin: 0;
+  }
+
+  .footer-media p {
+    margin-left: auto;
+  }
+  .footer-media, .icons {
+    margin-top: 1.25rem;
+  }
+
+  .icons {
+    margin-left: auto;
+  }
+
+  .scd-ftr-body {
+    width: 90%;
+  }
+
+  .scd-ftr-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .scd-ftr-nav img {
+    transform: scale(0.7);
+    margin-left: 0;
+  }
+
+  .scd-ftr-nav select {
+    margin-left: 4vw;
+    margin-top: 1.25rem;
+  }
+
+  .scd-ftr-links {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 750px) {
