@@ -174,6 +174,55 @@ navbar {
   font-weight: 550;
 }
 
+.tab-title h1{
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+.container{
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.box{
+  box-sizing: border-box;
+  padding: 10px;
+  border-left: 1px solid #d1d0d0;    
+}
+
+
+.box p{
+  font-size: 1.25rem;
+}
+
+.box:hover{
+  background: lightgray;
+  transition: 0.5s;
+}
+
+.box 
+p::after{
+  content: "";
+  width: 0%;
+  height: 0.150rem;
+  background: #f44336;
+  display: block;
+  margin-top: 20px;
+}
+
+
+.box
+p:hover::after{
+  width: 100%;
+}
+
 .first-footer {
   width: 100vw;
   height: 35vh;
