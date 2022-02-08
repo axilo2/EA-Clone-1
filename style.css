@@ -23,10 +23,10 @@ img {
   src: url(ElectronicArtsText-Regular.woff2);
 }
 
-.homepage {
+/* .homepage {
   float: right;
   width: 88vw;
-}
+} */
 .blackbar {
   display: flex;
   background-color: black;
@@ -368,6 +368,11 @@ navbar {
   }
   .background-section {
     background-image: url("Design_system/imgEA-medium.png");
+    background-size: auto;
+  }
+  .battlefield-text {
+    display: flex;
+    margin-left: unset;
   }
 }
 
@@ -396,7 +401,7 @@ navbar {
 .list-placeholder {
   display: flex;
   margin: auto;
-  background-color: blue;
+  background-color: white;
   height: 100%;
   flex-wrap: wrap;
   justify-content: center;
