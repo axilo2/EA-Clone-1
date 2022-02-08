@@ -23,10 +23,10 @@ img {
   src: url(ElectronicArtsText-Regular.woff2);
 }
 
-/* .homepage {
+.homepage {
   float: right;
-  width: 88vw;
-} */
+  width: 78vw;
+}
 .blackbar {
   display: flex;
   background-color: black;
@@ -381,9 +381,18 @@ navbar {
     display: none;
   }
 }
+body {
+  margin: 0%;
+}
+
+@font-face {
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
+}
+
+/* // SIDEBAR */
 
 .sidebar {
-  display: none;
   background-color: bisque;
   float: left;
   position: fixed;
@@ -401,7 +410,7 @@ navbar {
 .list-placeholder {
   display: flex;
   margin: auto;
-  background-color: white;
+  background-color: blue;
   height: 100%;
   flex-wrap: wrap;
   justify-content: center;
