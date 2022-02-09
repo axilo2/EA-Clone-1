@@ -768,8 +768,67 @@ navbar {
     src: url(ElectronicArtsText-Bold.woff2);
   }
 
-  /* // SIDEBAR */
+  
+  .warnings {
+    display: none;
+  }
+  
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  
+  .first-footer-links {
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .second-footer ul {
+    white-space: normal;
+  }
+  
+  .second-footer ul li {
+    margin-right: 0;
+  }
+  
+  .scd-ftr-nav select {
+    width: 80vw;
+    margin-left: 5.5vw;
+  }
+  
+  #little-card-fifa {
+    background: url("assets/fifa22.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-madden {
+    background: url("assets/madden.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-battlefield {
+    background: url("assets/battlefield-img.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-apex {
+    background: url("assets/apex.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-sims4 {
+    background: url("assets/sims4.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-ittakestwo {
+    background: url("assets/ittakestwo.jpg");
+    background-size: cover;
+  }
 }
+
 .sidebar {
   display: none;
   background-color: white;
@@ -821,61 +880,12 @@ navbar {
   background-color: chartreuse;
   height: 8%;
 }
-.warnings {
-  display: none;
-}
 
-.lists {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-}
+  
 
-.first-footer-links {
-  white-space: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.second-footer ul {
-  white-space: normal;
-}
-
-.second-footer ul li {
-  margin-right: 0;
-}
-
-.scd-ftr-nav select {
-  width: 80vw;
-  margin-left: 5.5vw;
-}
-
-#little-card-fifa {
-  background: url("assets/fifa22.jpg");
-  background-size: cover;
-}
-
-#little-card-madden {
-  background: url("assets/madden.jpg");
-  background-size: cover;
-}
-
-#little-card-battlefield {
-  background: url("assets/battlefield-img.jpg");
-  background-size: cover;
-}
-
-#little-card-apex {
-  background: url("assets/apex.jpg");
-  background-size: cover;
-}
-
-#little-card-sims4 {
-  background: url("assets/sims4.jpg");
-  background-size: cover;
-}
 
 #little-card-ittakestwo {
   background: url("assets/ittakestwo.jpg");
   background-size: cover;
 }
+
