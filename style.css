@@ -798,10 +798,12 @@ navbar {
     height: 100%;
     flex-wrap: wrap;
     justify-content: center;
+  }
 
 .little-card {
   width: 35%;
   height: 8%;
+}
 
   .smaller-list {
     display: flex;
@@ -882,3 +884,4 @@ navbar {
 }
 
 
+}
