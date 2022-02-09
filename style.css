@@ -23,10 +23,10 @@ img {
   src: url(ElectronicArtsText-Regular.woff2);
 }
 
-.homepage {
+/* .homepage {
   float: right;
   width: 78vw;
-}
+} */
 .blackbar {
   display: flex;
   background-color: black;
@@ -181,6 +181,133 @@ navbar {
 
 .parental-body h2 {
   font-weight: 550;
+
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
+}
+
+.tab-title h1 {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 100px;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.box {
+  box-sizing: border-box;
+  padding: 10px;
+  border-left: 1px solid #d1d0d0;
+}
+
+.box p {
+  font-size: 1.25rem;
+}
+
+.box:hover {
+  background: lightgray;
+  transition: 0.5s;
+}
+
+.box p::after {
+  content: "";
+  width: 0%;
+  height: 0.15rem;
+  background: #f44336;
+  display: block;
+  margin-top: 20px;
+}
+
+.box p:hover::after {
+  width: 100%;
+}
+
+.container-cards {
+  margin-left: 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
+
+.card-container {
+  margin-top: 120px;
+}
+
+.card-container h2 {
+  margin-bottom: 12px;
+}
+
+#card {
+  height: 60vh;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px grey;
+  transition: 0.5s;
+}
+
+#card:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+  box-shadow: 0px 15px 15px grey;
+}
+
+.img-placeholder {
+  background-color: rgba(160, 156, 156, 0.616);
+  width: 100%;
+  height: 30%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.card-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.card-header img {
+  height: 50px;
+  width: 100px;
+}
+
+.date {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 18px;
+}
+
+.card-text p {
+  font-size: 18px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+#space {
+  height: px;
+  width: 100%;
 }
 
 .first-footer {
@@ -234,6 +361,7 @@ navbar {
 
 .first-footer-links .lists ul {
   margin-bottom: 1.25rem;
+  padding-left: 0;
 }
 
 .first-footer-links .lists ul li {
@@ -256,8 +384,8 @@ navbar {
 }
 
 .first-footer-links p {
-  margin-left: 39px;
   font-size: 15px;
+  margin-left: 0;
 }
 
 .footer-media {
@@ -265,12 +393,15 @@ navbar {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  white-space: nowrap;
 }
 
 .footer-media p {
   font-weight: bold;
   font-size: 0.938rem;
   margin-bottom: 1.25rem;
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
 }
 
 .footer-media .icons ion-icon {
@@ -290,10 +421,16 @@ navbar {
   background-color: #f3f3f3;
 }
 
+.scd-ftr-body {
+  width: 60%;
+}
+
 .scd-ftr-nav {
   display: flex;
   align-items: center;
   margin-top: 1.125rem;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .scd-ftr-nav img {
@@ -311,9 +448,11 @@ navbar {
 .scd-ftr-nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   margin-right: 30px;
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
 }
 
 .scd-ftr-nav select {
@@ -350,7 +489,9 @@ navbar {
   text-decoration: none;
   color: black;
   margin-right: 15px;
-  font-size: 15px;
+  font-size: 12px;
+  font-family: EA-fontregular;
+  src: url(ElectronicArtsText-Regular.woff2);
 }
 
 .scd-ftr-links p {
@@ -360,7 +501,166 @@ navbar {
   margin-bottom: 7vh;
 }
 
+/*CARD GIOCHI*/
+.titolo-giochi {
+  text-align: center;
+  font-family: EA-fontbold;
+  font-size: 40px;
+  margin-top: 60px;
+}
+.sezione-giochi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card-giochi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-size: cover;
+  position: relative;
+  height: 330px;
+  width: 330px;
+  margin-top: 20px;
+}
+
+.card-giochi-gradient {
+  background: linear-gradient(
+    to top right,
+    rgb(41, 41, 102),
+    rgb(206, 54, 168)
+  );
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+}
+
+.card-giochi:hover {
+  background-size: cover;
+  position: relative;
+  height: 330px;
+  width: 330px;
+  margin-top: 10px;
+}
+#card-giochi-primo {
+  background-image: url("assets/battlefield-img.jpg");
+}
+#card-giochi-primo:hover {
+  background-image: url("assets/battlefield-img.jpg");
+}
+
+#card-giochi-secondo {
+  background-image: url("assets/fifa22.jpg");
+}
+#card-giochi-secondo:hover {
+  background-image: url("assets/fifa22.jpg");
+}
+
+#card-giochi-terzo {
+  background-image: url("assets/ittakestwo.jpg");
+}
+#card-giochi-terzo:hover {
+  background-image: url("assets/ittakestwo.jpg");
+}
+
+#card-giochi-quarto {
+  background-image: url("assets/needforspeed.jpg");
+}
+#card-giochi-quarto:hover {
+  background-image: url("assets/needforspeed.jpg");
+}
+
+#card-giochi-quinto {
+  background-image: url("assets/apex.jpg");
+}
+#card-giochi-quinto:hover {
+  background-image: url("assets/apex.jpg");
+}
+
+#card-giochi-sesto {
+  background-image: url("assets/sims4.jpg");
+}
+#card-giochi-sesto:hover {
+  background-image: url("assets/sims4.jpg");
+}
+
+.quinto-gioco {
+  align-items: center;
+  margin-left: 15px;
+}
+
+.card-giochi-gradient:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(58, 62, 129, 1) 0%,
+    rgba(230, 122, 125, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+}
+
+.card-giochi-elementi {
+  font-family: EA-fontbold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-giochi-nome {
+  width: 150px;
+  height: 100px;
+}
+
+.card-giochi:hover .secondo-gioco {
+  transform: translateY(-60px);
+  transition: 0.5s;
+}
+
+.card-giochi:hover .terzo-gioco {
+  transform: translateY(-60px);
+  transition: 0.5s;
+}
+
+.card-giochi:hover .card-giochi-nome {
+  transform: translateY(-35px);
+  transition: 0.5s;
+}
+
+.card-giochi-testo {
+  opacity: 0;
+  margin: 0;
+}
+
+.card-giochi:hover .card-giochi-testo {
+  opacity: 100%;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateY(-70px);
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+/*STILE BOTTONE SOTTO GIOCHI*/
+.primary {
+  margin-top: 30px;
+  align-items: center;
+}
+
 @media screen and (max-width: 1020px) {
+  .logo {
+    transform: scale(0.8);
+    transition: 1s;
+  }
+  .element {
+    display: none;
+  }
   .gradientbar {
     height: 20vh;
     display: flex;
@@ -374,47 +674,116 @@ navbar {
     display: flex;
     margin-left: unset;
   }
+
+  #sec-four {
+    width: 100vw;
+  }
+
+  .parental {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  .parental-body {
+    flex-direction: column;
+  }
+
+  .parental-body h2 {
+    text-align: center;
+  }
+
+  .warnings,
+  .first-footer-links {
+    width: 85%;
+    white-space: nowrap;
+  }
+
+  .warnings hr {
+    width: 100%;
+  }
+
+  .first-footer-links {
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .first-footer-links ul {
+    padding: 0;
+  }
+
+  .first-footer-links p {
+    margin: 0;
+  }
+
+  .footer-media p {
+    margin-left: auto;
+  }
+  .footer-media,
+  .icons {
+    margin-top: 1.25rem;
+  }
+
+  .icons {
+    margin-left: auto;
+  }
+
+  .scd-ftr-body {
+    width: 90%;
+  }
+
+  .scd-ftr-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .scd-ftr-nav img {
+    transform: scale(0.7);
+    margin-left: 0;
+  }
+
+  .scd-ftr-nav select {
+    margin-left: 4vw;
+    margin-top: 1.25rem;
+  }
+
+  .scd-ftr-links {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 750px) {
   .battlefield-text {
     display: none;
   }
-}
-body {
-  margin: 0%;
-}
 
-@font-face {
-  font-family: EA-fontbold;
-  src: url(ElectronicArtsText-Bold.woff2);
-}
+  body {
+    margin: 0%;
+  }
 
-/* // SIDEBAR */
+  @font-face {
+    font-family: EA-fontbold;
+    src: url(ElectronicArtsText-Bold.woff2);
+  }
 
-.sidebar {
-  background-color: bisque;
-  float: left;
-  position: fixed;
-  width: 22vw;
-  height: 100%;
-}
+  /* // SIDEBAR */
 
-.sidebar-text {
-  font-family: EA-fontbold;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
-}
+  .sidebar {
+    background-color: bisque;
+    float: left;
+    position: fixed;
+    width: 22vw;
+    height: 100%;
+  }
 
-.list-placeholder {
-  display: flex;
-  margin: auto;
-  background-color: blue;
-  height: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .sidebar-text {
+    font-family: EA-fontbold;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+
 
 .placeholder-card {
   background-image: url("assets/foto-nav.767w_");
@@ -422,21 +791,64 @@ body {
   height: 30%;
 }
 
-.smaller-list {
-  display: flex;
-  width: 80%;
-  height: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-evenly;
-  align-items: center;
-}
+  .list-placeholder {
+    display: flex;
+    margin: auto;
+    background-color: blue;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 
 .little-card {
   width: 35%;
   height: 8%;
-}
+
+  .smaller-list {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .little-card {
+    width: 35%;
+    background-color: chartreuse;
+    height: 8%;
+  }
+  .warnings {
+    display: none;
+  }
+
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .first-footer-links {
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .second-footer ul {
+    white-space: normal;
+  }
+
+  .second-footer ul li {
+    margin-right: 0;
+  }
+
+  .scd-ftr-nav select {
+    width: 80vw;
+    margin-left: 5.5vw;
+  }
+
+
 
 #little-card-fifa {
   background: url("assets/fifa22.jpg")  ;
