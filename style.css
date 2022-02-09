@@ -770,6 +770,7 @@ navbar {
   /* // SIDEBAR */
 }
 .sidebar {
+  display: none;
   background-color: white;
   float: left;
   position: fixed;
