@@ -407,3 +407,144 @@ p:hover::after{
 @media screen and (max-width: 750px) {
   
 }
+
+/*CARD GIOCHI*/
+.sezione-giochi {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+.card-giochi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-size: cover;
+  position: relative;
+  height: 330px;
+  width: 330px;
+  margin-top: 20px;
+}
+
+
+.card-giochi-gradient {
+
+  background: linear-gradient(to top right, rgb(41, 41, 102), rgb(206, 54, 168));
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+
+}
+
+.card-giochi:hover {
+  background-size: cover;
+  position: relative;
+  height: 330px;
+  width: 330px;
+  margin-top: 10px;
+  
+}
+#card-giochi-primo {
+  background-image: url("assets/battlefield-img.jpg");
+}
+ #card-giochi-primo:hover {
+  background-image: url("assets/battlefield-img.jpg");
+}
+
+#card-giochi-secondo {
+  background-image: url("assets/fifa22.jpg");
+}
+ #card-giochi-secondo:hover {
+  background-image: url("assets/fifa22.jpg");
+}
+
+#card-giochi-terzo {
+  background-image: url("assets/ittakestwo.jpg");
+}
+ #card-giochi-terzo:hover {
+  background-image: url("assets/ittakestwo.jpg");
+}
+
+#card-giochi-quarto {
+  background-image: url("assets/needforspeed.jpg");
+}
+ #card-giochi-quarto:hover {
+  background-image: url("assets/needforspeed.jpg");
+}
+
+#card-giochi-quinto {
+  background-image: url("assets/apex.jpg");
+}
+ #card-giochi-quinto:hover {
+  background-image: url("assets/apex.jpg");
+}
+
+#card-giochi-sesto {
+  background-image: url("assets/sims4.jpg");
+}
+ #card-giochi-sesto:hover {
+  background-image: url("assets/sims4.jpg");
+}
+
+.quinto-gioco {
+  align-items: center;
+  margin-left: 15px;
+}
+
+.card-giochi-gradient:hover {
+  background: linear-gradient(90deg, rgba(58, 62, 129, 1) 0%, rgba(230, 122, 125, 1) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+  position: absolute;
+
+}
+
+.card-giochi-elementi {
+  
+  font-family: EA-fontbold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+.card-giochi-nome {
+  width: 150px;
+  height: 100px;
+}
+
+.card-giochi:hover .secondo-gioco {
+  transform: translateY(-60px);
+  transition: 0.5s;
+}
+
+.card-giochi:hover .terzo-gioco {
+  transform: translateY(-60px);
+  transition: 0.5s;
+}
+
+.card-giochi:hover .card-giochi-nome {
+  transform: translateY(-35px);
+  transition: 0.5s;
+
+}
+
+.card-giochi-testo {
+  opacity: 0;
+  margin: 0;
+}
+
+.card-giochi:hover .card-giochi-testo {
+  opacity: 100%;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateY(-70px);
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
