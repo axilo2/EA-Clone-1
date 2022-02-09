@@ -4,6 +4,10 @@
   src: url(ElectronicArtsText-Light.woff2);
 }
 
+img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: EA-fontlight;
   src: url(ElectronicArtsText-Light.woff2);
@@ -19,6 +23,10 @@
   src: url(ElectronicArtsText-Regular.woff2);
 }
 
+.homepage {
+  float: right;
+  width: 78vw;
+}
 .blackbar {
   display: flex;
   background-color: black;
@@ -57,6 +65,7 @@ navbar {
   height: 75vh;
   width: 100vw;
   background-image: url("Design_system/imgEA.png");
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -499,6 +508,25 @@ p:hover::after{
 }
 
 @media screen and (max-width: 1020px) {
+  .logo {
+    transform: scale(0.8);
+    transition: 1s;
+  }
+  .element {
+    display: none;
+  }
+  .gradientbar {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .background-section {
+    background-image: url("Design_system/imgEA-medium.png");
+    background-size: auto;
+  }
+  .battlefield-text {
+    display: flex;
+    margin-left: unset;
   #sec-four {
     width: 100vw;
   }
@@ -576,6 +604,67 @@ p:hover::after{
 }
 
 @media screen and (max-width: 750px) {
+  .battlefield-text {
+    display: none;
+  }
+}
+body {
+  margin: 0%;
+}
+
+@font-face {
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
+}
+
+/* // SIDEBAR */
+
+.sidebar {
+  background-color: bisque;
+  float: left;
+  position: fixed;
+  width: 22vw;
+  height: 100%;
+}
+
+.sidebar-text {
+  font-family: EA-fontbold;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-placeholder {
+  display: flex;
+  margin: auto;
+  background-color: blue;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.placeholder-card {
+  width: 80%;
+  background-color: blueviolet;
+  height: 30%;
+}
+
+.smaller-list {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.little-card {
+  width: 35%;
+  background-color: chartreuse;
+  height: 8%;
+}
   .warnings{
     display: none;
   }
