@@ -791,6 +791,7 @@ navbar {
   height: 30%;
 }
 
+
 .list-placeholder {
   display: flex;
   margin: auto;
@@ -878,3 +879,7 @@ navbar {
   background: url("assets/ittakestwo.jpg");
   background-size: cover;
 }
+
+
+}
+
