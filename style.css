@@ -261,6 +261,7 @@ navbar {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  white-space: nowrap;
 }
 
 .footer-media p {
@@ -369,6 +370,10 @@ navbar {
 }
 
 @media screen and (max-width: 1020px) {
+  #sec-four {
+    width: 100vw;
+  }
+
   .parental {
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -376,7 +381,10 @@ navbar {
 
   .parental-body {
     flex-direction: column;
-    white-space: nowrap;
+  }
+
+  .parental-body h2{
+    text-align: center;
   }
 
   .warnings, .first-footer-links {
@@ -439,5 +447,32 @@ navbar {
 }
 
 @media screen and (max-width: 750px) {
-  
+  .warnings{
+    display: none;
+  }
+
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .first-footer-links {
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .second-footer ul {
+    white-space: normal;
+  }
+
+  .second-footer ul li {
+    margin-right: 0;
+  }
+
+  .scd-ftr-nav select {
+    width: 80vw;
+    margin-left: 5.5vw;
+  }
 }
