@@ -548,3 +548,10 @@ p:hover::after{
   justify-content: center;
   margin-left: 30px;
 }
+
+
+/*STILE BOTTONE SOTTO GIOCHI*/
+.primary {
+margin-top: 30px;
+  align-items: center;
+}
