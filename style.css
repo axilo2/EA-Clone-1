@@ -181,20 +181,19 @@ navbar {
 
 .parental-body h2 {
   font-weight: 550;
-  
+
   font-family: EA-fontbold;
   src: url(ElectronicArtsText-Bold.woff2);
-  
 }
 
-.tab-title h1{
+.tab-title h1 {
   box-sizing: border-box;
   text-align: center;
   margin-top: 50px;
   font-weight: bolder;
 }
 
-.container{
+.container {
   display: flex;
   box-sizing: border-box;
   margin-top: 100px;
@@ -204,45 +203,40 @@ navbar {
   justify-content: start;
 }
 
-.box{
+.box {
   box-sizing: border-box;
   padding: 10px;
-  border-left: 1px solid #d1d0d0;    
+  border-left: 1px solid #d1d0d0;
 }
 
-
-.box p{
+.box p {
   font-size: 1.25rem;
 }
 
-.box:hover{
+.box:hover {
   background: lightgray;
   transition: 0.5s;
 }
 
-.box 
-p::after{
+.box p::after {
   content: "";
   width: 0%;
-  height: 0.150rem;
+  height: 0.15rem;
   background: #f44336;
   display: block;
   margin-top: 20px;
 }
 
-
-.box
-p:hover::after{
+.box p:hover::after {
   width: 100%;
 }
 
-.container-cards{
+.container-cards {
   margin-left: 15vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 20px;
-  
 }
 
 .card-container {
@@ -311,7 +305,7 @@ p:hover::after{
   margin-top: 0;
 }
 
-#space{
+#space {
   height: px;
   width: 100%;
 }
@@ -527,6 +521,8 @@ p:hover::after{
   .battlefield-text {
     display: flex;
     margin-left: unset;
+  }
+
   #sec-four {
     width: 100vw;
   }
@@ -540,11 +536,12 @@ p:hover::after{
     flex-direction: column;
   }
 
-  .parental-body h2{
+  .parental-body h2 {
     text-align: center;
   }
 
-  .warnings, .first-footer-links {
+  .warnings,
+  .first-footer-links {
     width: 85%;
     white-space: nowrap;
   }
@@ -569,7 +566,8 @@ p:hover::after{
   .footer-media p {
     margin-left: auto;
   }
-  .footer-media, .icons {
+  .footer-media,
+  .icons {
     margin-top: 1.25rem;
   }
 
@@ -665,32 +663,31 @@ body {
   background-color: chartreuse;
   height: 8%;
 }
-  .warnings{
-    display: none;
-  }
+.warnings {
+  display: none;
+}
 
-  .lists {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-  }
+.lists {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
 
-  .first-footer-links {
-    white-space: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.first-footer-links {
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .second-footer ul {
-    white-space: normal;
-  }
+.second-footer ul {
+  white-space: normal;
+}
 
-  .second-footer ul li {
-    margin-right: 0;
-  }
+.second-footer ul li {
+  margin-right: 0;
+}
 
-  .scd-ftr-nav select {
-    width: 80vw;
-    margin-left: 5.5vw;
-  }
+.scd-ftr-nav select {
+  width: 80vw;
+  margin-left: 5.5vw;
 }
