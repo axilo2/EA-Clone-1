@@ -409,6 +409,12 @@ p:hover::after{
 }
 
 /*CARD GIOCHI*/
+.titolo-giochi {
+ text-align: center;
+  font-family: EA-fontbold;
+  font-size: 40px;
+  margin-top: 60px;
+}
 .sezione-giochi {
   display: flex;
   flex-direction: row;
