@@ -193,12 +193,11 @@ navbar {
   font-weight: bolder;
 }
 
-.container {
+.container-tab {
   display: flex;
   box-sizing: border-box;
   margin-top: 100px;
-  margin-left: 200px;
-  margin-right: 100px;
+  margin-left: 10vw;
   flex-wrap: nowrap;
   justify-content: start;
 }
@@ -210,7 +209,7 @@ navbar {
 }
 
 .box p {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
 }
 
 .box:hover {
@@ -232,7 +231,9 @@ navbar {
 }
 
 .container-cards {
-  margin-left: 15vw;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -248,8 +249,8 @@ navbar {
 }
 
 #card {
-  height: 60vh;
-  width: 18vw;
+  height: 500px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 5px 5px grey;
