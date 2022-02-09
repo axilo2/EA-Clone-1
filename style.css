@@ -186,7 +186,7 @@ navbar {
   box-sizing: border-box;
   margin-top: 100px;
   margin-left: 200px;
-  margin-right: 200px;
+  margin-right: 100px;
   flex-wrap: nowrap;
   justify-content: start;
 }
@@ -220,6 +220,86 @@ p::after{
 
 .box
 p:hover::after{
+  width: 100%;
+}
+
+.container-cards{
+  margin-left: 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  
+}
+
+.card-container {
+  margin-top: 120px;
+}
+
+.card-container h2 {
+  margin-bottom: 12px;
+}
+
+#card {
+  height: 60vh;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px grey;
+  transition: 0.5s;
+}
+
+#card:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+  box-shadow: 0px 15px 15px grey;
+}
+
+.img-placeholder {
+  background-color: rgba(160, 156, 156, 0.616);
+  width: 100%;
+  height: 30%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.card-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.card-header img {
+  height: 50px;
+  width: 100px;
+}
+
+.date {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 18px;
+}
+
+.card-text p {
+  font-size: 18px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+#space{
+  height: px;
   width: 100%;
 }
 
