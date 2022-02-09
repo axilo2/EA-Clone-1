@@ -361,6 +361,13 @@ navbar {
 }
 
 @media screen and (max-width: 1020px) {
+  .logo {
+    transform: scale(0.8);
+    transition: 1s;
+  }
+  .element {
+    display: none;
+  }
   .gradientbar {
     height: 20vh;
     display: flex;
