@@ -1,2 +1,891 @@
+* {
+  margin: 0;
+  font-family: EA-fontlight;
+  src: url(ElectronicArtsText-Light.woff2);
+}
 
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: EA-fontlight;
+  src: url(ElectronicArtsText-Light.woff2);
+}
+
+@font-face {
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
+}
+
+@font-face {
+  font-family: EA-fontregular;
+  src: url(ElectronicArtsText-Regular.woff2);
+}
+
+/* .homepage {
+  float: right;
+  width: 78vw;
+} */
+.blackbar {
+  display: flex;
+  background-color: black;
+  height: 4vh;
+  justify-content: flex-end;
+}
+
+navbar {
+  display: flex;
+  width: 100%;
+  height: 5vh;
+  background-color: white;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  align-items: center;
+}
+
+.element {
+  width: 100%;
+  margin-left: 30px;
+  display: flex;
+  font-weight: bolder;
+}
+
+.navElement {
+  display: inline-flex;
+  float: right;
+  display: flex;
+  padding: 15px;
+}
+
+.background-section {
+  height: 75vh;
+  width: 100vw;
+  background-image: url("Design_system/imgEA.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.battlefield-text {
+  display: flex;
+  color: white;
+  width: 30vw;
+  margin-left: 20vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.battlefield-text-head {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 900;
+}
+
+.battlefield-text-body {
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
+
+.gradientbar {
+  width: 100vw;
+  height: 10vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(13, 16, 66, 255),
+    rgba(128, 44, 68, 255)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gradientbar-text {
+  color: white;
+  font-size: 1.75em;
+  font-weight: 900;
+}
+
+.gradient-icon {
+  display: flex;
+  align-items: center;
+}
+
+#eaPlay:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#sec-four {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.ea-membership {
+  background-image: url(Design_system/Ea-gamepass-img.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+.member-text {
+  margin-left: 20%;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ea-play-logo img {
+  height: 5rem;
+  width: 15.938rem;
+  margin-bottom: 1.25rem;
+  margin-left: 0;
+}
+
+.member-text p {
+  margin: 0;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.member-text button {
+  margin-top: 1.5rem;
+}
+
+.parental {
+  width: 100vw;
+  height: 12vh;
+  background-color: #6eb0d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parental-body {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parental-body h2 {
+  font-weight: 550;
+
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
+}
+
+.tab-title h1 {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+.container-tab {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-left: 10vw;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.box {
+  box-sizing: border-box;
+  padding: 10px;
+  border-left: 1px solid #d1d0d0;
+}
+
+.box p {
+  font-size: 1.05rem;
+}
+
+.box:hover {
+  background: lightgray;
+  transition: 0.5s;
+}
+
+.box p::after {
+  content: "";
+  width: 0%;
+  height: 0.15rem;
+  background: #f44336;
+  display: block;
+  margin-top: 20px;
+}
+
+.box p:hover::after {
+  width: 100%;
+}
+
+.container-cards {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
+
+.card-container {
+  margin-top: 120px;
+}
+
+.card-container h2 {
+  margin-bottom: 12px;
+}
+
+#card {
+  height: 500px;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px grey;
+  transition: 0.5s;
+}
+
+#card:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+  box-shadow: 0px 15px 15px grey;
+}
+
+.img-placeholder {
+  background-color: rgba(160, 156, 156, 0.616);
+  width: 100%;
+  height: 30%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.card-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.card-header img {
+  height: 50px;
+  width: 100px;
+}
+
+.date {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 18px;
+}
+
+.card-text p {
+  font-size: 18px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+#space {
+  height: px;
+  width: 100%;
+}
+
+.first-footer {
+  width: 100vw;
+  height: 35vh;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ftr-size {
+  width: 60%;
+}
+
+.warnings {
+  height: 30%;
+}
+
+.warnings p:first-child {
+  margin-top: 5vh;
+}
+
+.warnings p {
+  font-size: 0.813rem;
+  margin-bottom: 0.313rem;
+  margin-left: 0;
+}
+
+.warnings hr {
+  margin-top: 1.25rem;
+}
+
+.warnings a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.first-footer-links {
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+.first-footer-links .lists {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-footer-links .lists ul {
+  margin-bottom: 1.25rem;
+  padding-left: 0;
+}
+
+.first-footer-links .lists ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.first-footer-links .lists ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.first-footer-links .lists a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.first-footer-links .lists a:hover {
+  color: var(--red);
+}
+
+.first-footer-links p {
+  font-size: 15px;
+  margin-left: 0;
+}
+
+.footer-media {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+.footer-media p {
+  font-weight: bold;
+  font-size: 0.938rem;
+  margin-bottom: 1.25rem;
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
+}
+
+.footer-media .icons ion-icon {
+  font-size: 25px;
+}
+
+.footer-media .icons ion-icon:not(:first-child) {
+  margin-left: 1.3rem;
+}
+
+.second-footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+}
+
+.scd-ftr-body {
+  width: 60%;
+}
+
+.scd-ftr-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 1.125rem;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scd-ftr-nav img {
+  height: 4.5rem;
+  width: 8rem;
+  margin-left: 0;
+}
+
+.scd-ftr-nav ul li {
+  list-style: none;
+  display: inline-block;
+  justify-self: left;
+}
+
+.scd-ftr-nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 30px;
+  font-family: EA-fontbold;
+  src: url(ElectronicArtsText-Bold.woff2);
+}
+
+.scd-ftr-nav select {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.scd-ftr-nav select {
+  border: solid #c7c7c7 2px;
+  border-radius: 3px;
+  height: 3.438rem;
+  width: 11rem;
+  padding-left: 1.875rem;
+  font-size: 15px;
+  background-color: inherit;
+}
+
+.scd-ftr-links {
+  width: 40%;
+  margin-top: 2vh;
+  margin-left: 8.7rem;
+}
+
+.scd-ftr-links ul {
+  list-style: none;
+}
+
+.scd-ftr-links ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.scd-ftr-links ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+  font-size: 12px;
+  font-family: EA-fontregular;
+  src: url(ElectronicArtsText-Regular.woff2);
+}
+
+.scd-ftr-links p {
+  margin-top: 9px;
+  margin-left: 37px;
+  font-size: 15px;
+  margin-bottom: 7vh;
+}
+
+/*CARD GIOCHI*/
+.titolo-giochi {
+  text-align: center;
+  font-family: EA-fontbold;
+  font-size: 40px;
+  margin-top: 60px;
+}
+.sezione-giochi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card-giochi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-size: cover;
+  position: relative;
+  height: 330px;
+  width: 330px;
+  margin-top: 20px;
+}
+
+.card-giochi-gradient {
+  background: linear-gradient(
+    to top right,
+    rgb(41, 41, 102),
+    rgb(206, 54, 168)
+  );
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+}
+
+.card-giochi:hover {
+  background-size: cover;
+  position: relative;
+  height: 330px;
+  width: 330px;
+  margin-top: 10px;
+}
+#card-giochi-primo {
+  background-image: url("assets/battlefield-img.jpg");
+}
+#card-giochi-primo:hover {
+  background-image: url("assets/battlefield-img.jpg");
+}
+
+#card-giochi-secondo {
+  background-image: url("assets/fifa22.jpg");
+}
+#card-giochi-secondo:hover {
+  background-image: url("assets/fifa22.jpg");
+}
+
+#card-giochi-terzo {
+  background-image: url("assets/ittakestwo.jpg");
+}
+#card-giochi-terzo:hover {
+  background-image: url("assets/ittakestwo.jpg");
+}
+
+#card-giochi-quarto {
+  background-image: url("assets/needforspeed.jpg");
+}
+#card-giochi-quarto:hover {
+  background-image: url("assets/needforspeed.jpg");
+}
+
+#card-giochi-quinto {
+  background-image: url("assets/apex.jpg");
+}
+#card-giochi-quinto:hover {
+  background-image: url("assets/apex.jpg");
+}
+
+#card-giochi-sesto {
+  background-image: url("assets/sims4.jpg");
+}
+#card-giochi-sesto:hover {
+  background-image: url("assets/sims4.jpg");
+}
+
+.quinto-gioco {
+  align-items: center;
+  margin-left: 15px;
+}
+
+.card-giochi-gradient:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(58, 62, 129, 1) 0%,
+    rgba(230, 122, 125, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+}
+
+.card-giochi-elementi {
+  font-family: EA-fontbold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-giochi-nome {
+  width: 150px;
+  height: 100px;
+}
+
+.card-giochi:hover .secondo-gioco {
+  transform: translateY(-60px);
+  transition: 0.5s;
+}
+
+.card-giochi:hover .terzo-gioco {
+  transform: translateY(-60px);
+  transition: 0.5s;
+}
+
+.card-giochi:hover .card-giochi-nome {
+  transform: translateY(-35px);
+  transition: 0.5s;
+}
+
+.card-giochi-testo {
+  opacity: 0;
+  margin: 0;
+}
+
+.card-giochi:hover .card-giochi-testo {
+  opacity: 100%;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateY(-70px);
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+/*STILE BOTTONE SOTTO GIOCHI*/
+.primary {
+  margin-top: 30px;
+  align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+  .logo {
+    transform: scale(0.8);
+    transition: 1s;
+  }
+  .element {
+    display: none;
+  }
+  .gradientbar {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .background-section {
+    background-image: url("Design_system/imgEA-medium.png");
+    background-size: auto;
+  }
+  .battlefield-text {
+    display: flex;
+    margin-left: unset;
+  }
+
+  #sec-four {
+    width: 100vw;
+  }
+
+  .parental {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  .parental-body {
+    flex-direction: column;
+  }
+
+  .parental-body h2 {
+    text-align: center;
+  }
+
+  .warnings,
+  .first-footer-links {
+    width: 85%;
+    white-space: nowrap;
+  }
+
+  .warnings hr {
+    width: 100%;
+  }
+
+  .first-footer-links {
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .first-footer-links ul {
+    padding: 0;
+  }
+
+  .first-footer-links p {
+    margin: 0;
+  }
+
+  .footer-media p {
+    margin-left: auto;
+  }
+  .footer-media,
+  .icons {
+    margin-top: 1.25rem;
+  }
+
+  .icons {
+    margin-left: auto;
+  }
+
+  .scd-ftr-body {
+    width: 90%;
+  }
+
+  .scd-ftr-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .scd-ftr-nav img {
+    transform: scale(0.7);
+    margin-left: 0;
+  }
+
+  .scd-ftr-nav select {
+    margin-left: 4vw;
+    margin-top: 1.25rem;
+  }
+
+  .scd-ftr-links {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .battlefield-text {
+    display: none;
+  }
+
+  body {
+    margin: 0%;
+  }
+
+  @font-face {
+    font-family: EA-fontbold;
+    src: url(ElectronicArtsText-Bold.woff2);
+  }
+
+  
+  .warnings {
+    display: none;
+  }
+  
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  
+  .first-footer-links {
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .second-footer ul {
+    white-space: normal;
+  }
+  
+  .second-footer ul li {
+    margin-right: 0;
+  }
+  
+  .scd-ftr-nav select {
+    width: 80vw;
+    margin-left: 5.5vw;
+  }
+  
+  #little-card-fifa {
+    background: url("assets/fifa22.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-madden {
+    background: url("assets/madden.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-battlefield {
+    background: url("assets/battlefield-img.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-apex {
+    background: url("assets/apex.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-sims4 {
+    background: url("assets/sims4.jpg");
+    background-size: cover;
+  }
+  
+  #little-card-ittakestwo {
+    background: url("assets/ittakestwo.jpg");
+    background-size: cover;
+  }
+}
+
+.sidebar {
+  display: none;
+  background-color: white;
+  float: left;
+  position: fixed;
+  width: 22vw;
+  height: 100%;
+}
+
+.sidebar-text {
+  font-family: EA-fontbold;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.placeholder-card {
+  background-image: url("assets/foto-nav.767w_");
+  width: 80%;
+  height: 30%;
+}
+
+.list-placeholder {
+  display: flex;
+  margin: auto;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.little-card {
+  width: 35%;
+  height: 8%;
+}
+
+.smaller-list {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.little-card {
+  width: 35%;
+  background-color: chartreuse;
+  height: 8%;
+}
+
+  
+
+
+#little-card-ittakestwo {
+  background: url("assets/ittakestwo.jpg");
+  background-size: cover;
+}
 
