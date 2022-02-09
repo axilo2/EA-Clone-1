@@ -129,7 +129,7 @@ navbar {
 }
 
 .ea-membership {
-  background-image: url(/Design_system/Ea-gamepass-img.jpeg);
+  background-image: url(Design_system/Ea-gamepass-img.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -792,7 +792,6 @@ navbar {
   height: 30%;
 }
 
-
 .list-placeholder {
   display: flex;
   margin: auto;
@@ -880,6 +879,3 @@ navbar {
   background: url("assets/ittakestwo.jpg");
   background-size: cover;
 }
-
-
-
