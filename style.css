@@ -784,6 +784,13 @@ navbar {
     justify-content: space-around;
   }
 
+
+.placeholder-card {
+  background-image: url("assets/foto-nav.767w_");
+  width: 80%;
+  height: 30%;
+}
+
   .list-placeholder {
     display: flex;
     margin: auto;
@@ -791,13 +798,10 @@ navbar {
     height: 100%;
     flex-wrap: wrap;
     justify-content: center;
-  }
 
-  .placeholder-card {
-    width: 80%;
-    background-color: blueviolet;
-    height: 30%;
-  }
+.little-card {
+  width: 35%;
+  height: 8%;
 
   .smaller-list {
     display: flex;
@@ -843,4 +847,38 @@ navbar {
     width: 80vw;
     margin-left: 5.5vw;
   }
+
+
+
+#little-card-fifa {
+  background: url("assets/fifa22.jpg")  ;
+  background-size: cover;
+  
 }
+
+#little-card-madden {
+  background: url("assets/madden.jpg")  ;
+  background-size: cover;
+}
+
+#little-card-battlefield {
+  background: url("assets/battlefield-img.jpg")  ;
+  background-size: cover;
+}
+
+#little-card-apex {
+  background: url("assets/apex.jpg")  ;
+  background-size: cover;
+}
+
+#little-card-sims4 {
+  background: url("assets/sims4.jpg")  ;
+  background-size: cover;
+}
+
+#little-card-ittakestwo {
+  background: url("assets/ittakestwo.jpg")  ;
+  background-size: cover;
+}
+
+
