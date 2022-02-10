@@ -197,7 +197,7 @@ navbar {
   display: flex;
   box-sizing: border-box;
   margin-top: 100px;
-  margin-left: 10vw;
+  margin-left: 15vw;
   flex-wrap: nowrap;
   justify-content: start;
 }
@@ -210,6 +210,7 @@ navbar {
 
 .box p {
   font-size: 1.05rem;
+  margin-left: 3px;
 }
 
 .box:hover {
