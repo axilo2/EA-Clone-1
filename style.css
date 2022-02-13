@@ -60,25 +60,24 @@ navbar {
   display: flex;
   padding: 15px;
 }
-
+.mainsection {
+  height: 80vh;
+}
 .background-section {
-  height: 75vh;
-  width: 100vw;
   background-image: url("Design_system/imgEA.png");
+  height: 80%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
-
 .battlefield-text {
-  display: flex;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
   color: white;
-  width: 30vw;
-  margin-left: 20vw;
-  flex-direction: column;
-  align-items: center;
 }
 
 .battlefield-text-head {
@@ -664,17 +663,17 @@ navbar {
     display: none;
   }
   .gradientbar {
-    height: 20vh;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
   .background-section {
     background-image: url("Design_system/imgEA-medium.png");
-    background-size: auto;
   }
   .battlefield-text {
-    display: flex;
     margin-left: unset;
+    font-size: smaller;
+    left: 44%;
   }
 
   #sec-four {
@@ -756,10 +755,6 @@ navbar {
 }
 
 @media screen and (max-width: 750px) {
-  .battlefield-text {
-    display: none;
-  }
-
   body {
     margin: 0%;
   }
@@ -769,64 +764,89 @@ navbar {
     src: url(ElectronicArtsText-Bold.woff2);
   }
 
-  
   .warnings {
     display: none;
   }
-  
+
   .lists {
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
-  
+
   .first-footer-links {
     white-space: normal;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .second-footer ul {
     white-space: normal;
   }
-  
+
   .second-footer ul li {
     margin-right: 0;
   }
-  
+
   .scd-ftr-nav select {
     width: 80vw;
     margin-left: 5.5vw;
   }
-  
+
   #little-card-fifa {
     background: url("assets/fifa22.jpg");
     background-size: cover;
   }
-  
+
   #little-card-madden {
     background: url("assets/madden.jpg");
     background-size: cover;
   }
-  
+
   #little-card-battlefield {
     background: url("assets/battlefield-img.jpg");
     background-size: cover;
   }
-  
+
   #little-card-apex {
     background: url("assets/apex.jpg");
     background-size: cover;
   }
-  
+
   #little-card-sims4 {
     background: url("assets/sims4.jpg");
     background-size: cover;
   }
-  
+
   #little-card-ittakestwo {
     background: url("assets/ittakestwo.jpg");
     background-size: cover;
+  }
+  .mainsection {
+    height: 60vh;
+  }
+  .background-section {
+    background-image: url("Design_system/imgEA-small.png");
+    height: 50%;
+  }
+  .gradientbar {
+    position: relative;
+    top: 40%;
+  }
+  .battlefield-text {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0;
+    width: 80%;
+    height: 90%;
+    margin-top: -124px;
+    background-color: rgba(5, 42, 56, 255);
+    font-size: xx-small;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-40%, 103%);
+    color: white;
   }
 }
 
@@ -882,11 +902,7 @@ navbar {
   height: 8%;
 }
 
-  
-
-
 #little-card-ittakestwo {
   background: url("assets/ittakestwo.jpg");
   background-size: cover;
 }
-
