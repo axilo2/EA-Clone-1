@@ -186,17 +186,18 @@ navbar {
   src: url(ElectronicArtsText-Bold.woff2);
 }
 
-.tab-title h1 {
+/*.tab-title h1 {
   box-sizing: border-box;
   text-align: center;
   margin-top: 50px;
-  font-weight: bolder;
-}
+  font-weight: 50%;
+
+}*/
 
 .container-tab {
   display: flex;
   box-sizing: border-box;
-  margin-top: 100px;
+  margin-top: 15px;
   margin-left: 15vw;
   flex-wrap: nowrap;
   justify-content: start;
@@ -205,11 +206,26 @@ navbar {
 .box {
   box-sizing: border-box;
   padding: 10px;
-  border-left: 1px solid #d1d0d0;
+  /*border-left: 1px solid #d1d0d0;*/
+}
+
+.box::before{
+  display:block;
+  clear: both;
+  content : "";
+  position: relative;
+  right    : 37%;
+  top  : 20px;
+  /*max-width:100px;*/
+  height  : 15px;
+  width   : 50%;  
+  border-left: 2px solid lightgray;
+  margin:0 auto;
+  padding:4px 0px;
 }
 
 .box p {
-  font-size: 1.05rem;
+  font-size: 1.07rem;
   margin-left: 3px;
 }
 
@@ -229,6 +245,12 @@ navbar {
 
 .box p:hover::after {
   width: 100%;
+}
+
+.divisory{
+  height: 2px;
+  width: 100vw;
+  background: lightgray;
 }
 
 .container-cards {
@@ -504,7 +526,8 @@ navbar {
 }
 
 /*CARD GIOCHI*/
-.titolo-giochi {
+.titolo-giochi,
+.tab-title>h1 {
   text-align: center;
   font-family: EA-fontbold;
   font-size: 40px;
