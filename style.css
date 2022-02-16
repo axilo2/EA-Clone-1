@@ -29,9 +29,32 @@ img {
 } */
 .blackbar {
   display: flex;
-  background-color: black;
+  background-color: #161616;
   height: 4vh;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.blackbar ul {
+  list-style: none;
+  height: fit-content;
+  margin-top: 5px;
+}
+
+.blackbar ul li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 20px; 
+}
+
+.bar-icon {
+  color: #adadad;
+  font-size: large;
+}
+
+.bar-icon:hover {
+  color: white;
+  cursor: pointer;
 }
 
 navbar {
