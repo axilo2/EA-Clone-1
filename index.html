@@ -8,13 +8,34 @@
 
    <link rel="stylesheet" href="Design_system/design.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
 
   <body>
-    <div class="blackbar">
-      <img src="assets/icons/user_icon.png" alt="" width="15px" />
-      <img src="assets/icons/question_mark_icon.png" alt="" width="15px" />
-      <img src="Design_system/logosecondario.png.png" alt="" width="15px" />
+    <div id="blackbar">
+      <div class="blackbar-nav">
+        <ul class="icon-list">
+          <li><ion-icon name="person-outline" class="bar-icon" onclick="showMenu()"></ion-icon></li>
+          <li><ion-icon name="help-outline" class="bar-icon"></ion-icon></li>
+        </ul>
+  
+        <img
+            src="/Design_system/Logo-della-EAsecondary.png"
+            alt="Logo EA" height="20px" width="35px"
+          />
+      </div>
+
+      <div class="blackbar-menu" id="blackbar-menu-one">
+        <div class="login d-flex" id="menu-one-div">
+          <ion-icon name="person-sharp" class="user-login blackbar-menu-icon"></ion-icon>
+          <p>Accedi</p>
+        </div>
+
+        <div class="newaccount d-flex" id="menu-one-div2">
+          <ion-icon name="person-add-sharp" class="new-account-user blackbar-menu-icon"></ion-icon>
+          <p>Crea account</p>
+        </div>
+      </div>
     </div>
 
     <navbar>
@@ -23,7 +44,7 @@
       </div>
       <div class="logo">
         <img src="Design_system/logoNavbar.png" alt="" width="150px"
-        height="30px"" />
+        height="30px" />
       </div>
       <div class="element">
         <div class="navElement">Giochi</div>
@@ -44,7 +65,7 @@
       </div>
       <div class="list-placeholder">
         <div class="placeholder-card">
-          <img src="assets/ea-play-logo-svg (1).svg"  width="70" alt="" style="align-items: center;">
+          <img src="assets/ea-play-logo-svg (1).svg"  width="40" alt="" >
         
         </div>
         <div class="smaller-list">
@@ -56,11 +77,11 @@
           </div>
 
           <div class="little-card" id="little-card-battlefield">
-            <img src="assets/battlefield-2042-mono-logo-svg.svg" width="50" alt="">
+            <img src="assets/battlefield-2042-mono-logo-svg.svg" width="40" alt="">
           </div>
           <div class="little-card" id="little-card-apex">
 
-            <img src="assets/apex-legends-mono-logo.svg" width="50" alt="">
+            <img src="assets/apex-legends-mono-logo.svg" width="40" alt="">
           </div>
 
           <div class="little-card" id="little-card-sims4">
@@ -109,7 +130,8 @@
 
     <!--CARD-GIOCHI-->
     <div class="titolo-giochi">Giochi in evidenza</div>
-    <div class="sezione-giochi">
+  <div id="all-games">
+    
      
       <!--PRIMO GIOCO-->
     <div class="card-giochi" id="card-giochi-primo">
@@ -185,10 +207,10 @@
               <p class="card-giochi-testo">Official Site</p>
           </div>
         </div>
-    </div>
-  </div>
+   
   
-  <div class="sezione-giochi">
+  
+  
     <!--QUARTO GIOCO-->
   <div class="card-giochi" id="card-giochi-quarto">
     <div class="card-giochi-gradient"></div>
@@ -224,6 +246,7 @@
         </div>
       </div>
   </div>
+</div>
 </div>
 
 <!--BOTTONE SOTTO CARD GIOCHI-->

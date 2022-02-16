@@ -38,6 +38,7 @@ h2 {
 .btn:hover {
   transform: scale(1.1);
   transition: 0.3s;
+  font-size: inherit;
 }
 
 p {
@@ -258,8 +259,8 @@ img {
   );
   width: 100%;
   height: 100%;
-  opacity: 0.9;
-  position: absolute;
+  opacity: .9;
+ position: absolute;
 }
 
 .card-giochi-elementi {
@@ -275,7 +276,7 @@ img {
 }
 
 .card-giochi:hover .card-giochi-nome {
-  transform: translateY(-35px);
+ transform: translateY(-35px);
   transition: 0.5s;
 }
 

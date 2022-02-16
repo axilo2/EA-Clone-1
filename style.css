@@ -27,11 +27,88 @@ img {
   float: right;
   width: 78vw;
 } */
-.blackbar {
+#blackbar {
+  width: 100vw;
   display: flex;
-  background-color: black;
+  flex-direction: column;
+}
+
+.blackbar-nav {
+  display: flex;
+  background-color: #161616;
   height: 4vh;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.blackbar-nav ul {
+  list-style: none;
+  height: fit-content;
+  margin-top: 5px;
+}
+
+.blackbar-nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.bar-icon {
+  color: #adadad;
+  font-size: large;
+}
+
+.bar-icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.blackbar-menu {
+  height: 40vh;
+  width: 100vw;
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  top: 4vh;
+  visibility: collapse;
+}
+
+.blackbar-menu-icon {
+  color: var(--red);
+  font-size: 35px;
+}
+
+.blackbar-menu p {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  margin-top: 3px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  margin-right: 10vw;
+}
+
+.login:hover {
+  transform: translateY(-5px);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.newaccount:hover {
+  transform: translateY(-5px);
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 navbar {
@@ -207,19 +284,19 @@ navbar {
   /*border-left: 1px solid #d1d0d0;*/
 }
 
-.box::before{
-  display:block;
+.box::before {
+  display: block;
   clear: both;
-  content : "";
+  content: "";
   position: relative;
-  right    : 37%;
-  top  : 20px;
+  right: 37%;
+  top: 20px;
   /*max-width:100px;*/
-  height  : 15px;
-  width   : 50%;  
+  height: 15px;
+  width: 50%;
   border-left: 2px solid lightgray;
-  margin:0 auto;
-  padding:4px 0px;
+  margin: 0 auto;
+  padding: 4px 0px;
 }
 
 .box p {
@@ -245,7 +322,7 @@ navbar {
   width: 100%;
 }
 
-.divisory{
+.divisory {
   height: 2px;
   width: 100vw;
   background: lightgray;
@@ -532,15 +609,16 @@ navbar {
 
 /*CARD GIOCHI*/
 .titolo-giochi,
-.tab-title>h1 {
+.tab-title > h1 {
   text-align: center;
   font-family: EA-fontbold;
   font-size: 40px;
   margin-top: 60px;
 }
-.sezione-giochi {
+#all-games {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .card-giochi {
@@ -549,10 +627,12 @@ navbar {
   justify-content: center;
   border: 1px solid black;
   background-size: cover;
-  position: relative;
+  /* position: relative;*/
   height: 330px;
   width: 330px;
   margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .card-giochi-gradient {
@@ -564,12 +644,12 @@ navbar {
   width: 100%;
   height: 100%;
   opacity: 0;
-  position: absolute;
+  /* position: absolute;*/
 }
 
 .card-giochi:hover {
   background-size: cover;
-  position: relative;
+  /** position: relative;*/
   height: 330px;
   width: 330px;
   margin-top: 10px;
@@ -603,10 +683,10 @@ navbar {
 }
 
 #card-giochi-quinto {
-  background-image: url("assets/apex.jpg");
+  background-image: url("assets/apex1.jpg");
 }
 #card-giochi-quinto:hover {
-  background-image: url("assets/apex.jpg");
+  background-image: url("assets/apex1.jpg");
 }
 
 #card-giochi-sesto {
@@ -630,7 +710,7 @@ navbar {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .card-giochi-elementi {
@@ -781,6 +861,13 @@ navbar {
     width: 100%;
     margin-left: 0;
   }
+
+  /*MEDIA PER CARD-GIOCHI*/
+  #all-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -851,6 +938,14 @@ navbar {
     background: url("assets/ittakestwo.jpg");
     background-size: cover;
   }
+
+  /*MEDIA PER I CARD-GIOCHI*/
+  .sezione-giochi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .mainsection {
     height: 60vh;
   }
@@ -879,6 +974,7 @@ navbar {
   }
 }
 
+/* STILE SIDEBAR*/
 .sidebar {
   display: none;
   background-color: white;
@@ -887,18 +983,42 @@ navbar {
   width: 22vw;
   height: 100%;
 }
+.sidebar-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .sidebar-text {
   font-family: EA-fontbold;
-  margin-top: 50px;
   display: flex;
   justify-content: space-around;
+  margin: 30px;
+  margin-right: 60px;
+}
+
+.sidebar-close {
+  font-weight: bold;
+  margin-left: 110px;
+}
+
+.sidebar-text > p {
+  font-size: 17px;
+  color: gray;
+  font-weight: bold;
 }
 
 .placeholder-card {
   background-image: url("assets/foto-nav.767w_");
   width: 80%;
   height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.placeholder-card > img:hover {
+  width: 80px;
 }
 
 .list-placeholder {
@@ -910,8 +1030,20 @@ navbar {
 }
 
 .little-card {
-  width: 35%;
-  height: 8%;
+  width: 40%;
+  height: 10%;
+}
+
+.little-card > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.little-card > img:hover {
+  width: 50px;
 }
 
 .smaller-list {
@@ -925,13 +1057,32 @@ navbar {
   align-items: center;
 }
 
-.little-card {
-  width: 35%;
-  background-color: chartreuse;
-  height: 8%;
+#little-card-fifa {
+  background: url("assets/fifa22.jpg");
+  background-size: cover;
+}
+
+#little-card-madden {
+  background: url(assets/madden.jpg);
+  background-size: cover;
+}
+
+#little-card-battlefield {
+  background: url(assets/battlefield-img.jpg);
+  background-size: cover;
+}
+
+#little-card-apex {
+  background: url(assets/apex1.jpg);
+  background-size: cover;
+}
+
+#little-card-sims4 {
+  background: url(assets/sims4.jpg);
+  background-size: cover;
 }
 
 #little-card-ittakestwo {
-  background: url("assets/ittakestwo.jpg");
+  background: url(assets/ittakestwo.jpg);
   background-size: cover;
 }
