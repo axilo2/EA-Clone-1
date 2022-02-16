@@ -362,9 +362,16 @@ navbar {
 }
 
 .img-placeholder {
-  background-color: rgba(160, 156, 156, 0.616);
+  /*background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2022/01/ea-star-wars-featured-image-web.png.adapt.crop16x9.431p.png);*/
   width: 100%;
-  height: 30%;
+  height: 40%;
+}
+
+.img-placeholder img{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  background-size: auto;
 }
 
 .card-body {
