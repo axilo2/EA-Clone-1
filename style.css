@@ -533,10 +533,13 @@ navbar {
   font-size: 40px;
   margin-top: 60px;
 }
-.sezione-giochi {
+#all-games {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+  width: 80%;
+  margin: auto;
 }
 .card-giochi {
   display: flex;
@@ -544,7 +547,7 @@ navbar {
   justify-content: center;
   border: 1px solid black;
   background-size: cover;
-  position: relative;
+ /* position: relative;*/
   height: 330px;
   width: 330px;
   margin-top: 20px;
@@ -559,12 +562,12 @@ navbar {
   width: 100%;
   height: 100%;
   opacity: 0;
-  position: absolute;
+ /* position: absolute;*/
 }
 
 .card-giochi:hover {
   background-size: cover;
-  position: relative;
+ /** position: relative;*/
   height: 330px;
   width: 330px;
   margin-top: 10px;
@@ -598,10 +601,10 @@ navbar {
 }
 
 #card-giochi-quinto {
-  background-image: url("assets/apex.jpg");
+  background-image: url("assets/apex1.jpg");
 }
 #card-giochi-quinto:hover {
-  background-image: url("assets/apex.jpg");
+  background-image: url("assets/apex1.jpg");
 }
 
 #card-giochi-sesto {
@@ -625,7 +628,7 @@ navbar {
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .card-giochi-elementi {
@@ -666,7 +669,7 @@ navbar {
   margin: 0px;
   font-size: 15px;
   font-weight: bold;
-  transform: translateY(-70px);
+ transform: translateY(-70px);
   align-items: center;
   justify-content: center;
   margin-left: 30px;
@@ -776,6 +779,13 @@ navbar {
     width: 100%;
     margin-left: 0;
   }
+
+  /*MEDIA PER CARD-GIOCHI*/
+  #all-games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
 }
 
 @media screen and (max-width: 750px) {
@@ -851,29 +861,66 @@ navbar {
     background: url("assets/ittakestwo.jpg");
     background-size: cover;
   }
+
+  /*MEDIA PER I CARD-GIOCHI*/
+  .sezione-giochi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
 }
 
+/* STILE SIDEBAR*/
 .sidebar {
-  display: none;
+ /* display: none;*/
   background-color: white;
   float: left;
   position: fixed;
   width: 22vw;
   height: 100%;
 }
+.sidebar-head{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
 
 .sidebar-text {
   font-family: EA-fontbold;
-  margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; 
+  margin: 30px;
+ margin-right: 60px;
+}
+
+.sidebar-close {
+  font-weight: bold;
+  margin-left: 110px;
+}
+
+.sidebar-text> p {
+  font-size: 17px;
+  color: gray;
+  font-weight: bold;
 }
 
 .placeholder-card {
   background-image: url("assets/foto-nav.767w_");
   width: 80%;
   height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+.placeholder-card> img:hover {
+ width: 80px;
+
+}
+
+
 
 .list-placeholder {
   display: flex;
@@ -884,8 +931,20 @@ navbar {
 }
 
 .little-card {
-  width: 35%;
-  height: 8%;
+  width: 40%;
+  height: 10%;
+}
+
+.little-card>img {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+margin-left: 40px;
+margin-top: 20px;
+}
+
+.little-card>img:hover {
+  width: 50px;
 }
 
 .smaller-list {
@@ -899,17 +958,40 @@ navbar {
   align-items: center;
 }
 
-.little-card {
-  width: 35%;
-  background-color: chartreuse;
-  height: 8%;
-}
 
   
 
-
-#little-card-ittakestwo {
-  background: url("assets/ittakestwo.jpg");
+#little-card-fifa {
+  background: url("assets/fifa22.jpg");
   background-size: cover;
 }
+
+#little-card-madden{
+  background:url(assets/madden.jpg) ;
+  background-size: cover;
+}
+
+#little-card-battlefield{
+  background:url(assets/battlefield-img.jpg) ;
+  background-size: cover;
+}
+
+#little-card-apex{
+  background:url(assets/apex1.jpg) ;
+  background-size: cover;
+}
+
+#little-card-sims4{
+  background:url(assets/sims4.jpg) ;
+  background-size: cover;
+}
+
+#little-card-ittakestwo{
+  background:url(assets/ittakestwo.jpg) ;
+  background-size: cover;
+}
+
+
+
+
 
