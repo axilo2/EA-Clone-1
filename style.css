@@ -874,7 +874,7 @@ navbar {
 
 /* STILE SIDEBAR*/
 .sidebar {
- /* display: none;*/
+  display: none;
   background-color: white;
   float: left;
   position: fixed;
