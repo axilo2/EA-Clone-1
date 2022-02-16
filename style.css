@@ -27,7 +27,14 @@ img {
   float: right;
   width: 78vw;
 } */
-.blackbar {
+#blackbar {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.blackbar-nav {
   display: flex;
   background-color: #161616;
   height: 4vh;
@@ -35,13 +42,13 @@ img {
   align-items: center;
 }
 
-.blackbar ul {
+.blackbar-nav ul {
   list-style: none;
   height: fit-content;
   margin-top: 5px;
 }
 
-.blackbar ul li {
+.blackbar-nav ul li {
   display: inline-block;
   margin-left: 15px;
   margin-right: 20px; 
@@ -54,6 +61,53 @@ img {
 
 .bar-icon:hover {
   color: white;
+  cursor: pointer;
+}
+
+.blackbar-menu {
+ height: 40vh;
+ width: 100vw;
+ background-color: #161616;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 1;
+ position: absolute;
+ top: 4vh;
+}
+
+.blackbar-menu-icon {
+  color: var(--red);
+  font-size: 35px;
+}
+
+.blackbar-menu p {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  margin-top: 3px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  margin-right: 10vw;
+}
+
+.login:hover {
+  transform: translateY(-5px);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.newaccount:hover{
+  transform: translateY(-5px);
+  transition: 0.2s;
   cursor: pointer;
 }
 

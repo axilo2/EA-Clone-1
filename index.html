@@ -8,19 +8,34 @@
 
    <link rel="stylesheet" href="Design_system/design.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
 
   <body>
-    <div class="blackbar">
-      <ul class="icon-list">
-        <li><ion-icon name="person-outline" class="bar-icon"></ion-icon></li>
-        <li><ion-icon name="help-outline" class="bar-icon"></ion-icon></li>
-      </ul>
+    <div id="blackbar">
+      <div class="blackbar-nav">
+        <ul class="icon-list">
+          <li><ion-icon name="person-outline" class="bar-icon" onclick="showMenu()"></ion-icon></li>
+          <li><ion-icon name="help-outline" class="bar-icon"></ion-icon></li>
+        </ul>
+  
+        <img
+            src="/Design_system/Logo-della-EAsecondary.png"
+            alt="Logo EA" height="20px" width="35px"
+          />
+      </div>
 
-      <img
-          src="/Design_system/Logo-della-EAsecondary.png"
-          alt="Logo EA" height="20px" width="35px"
-        />
+      <div class="blackbar-menu" id="blackbar-menu-one">
+        <div class="login d-flex" id="menu-one-div">
+          <ion-icon name="person-sharp" class="user-login blackbar-menu-icon"></ion-icon>
+          <p>Accedi</p>
+        </div>
+
+        <div class="newaccount d-flex" id="menu-one-div2">
+          <ion-icon name="person-add-sharp" class="new-account-user blackbar-menu-icon"></ion-icon>
+          <p>Crea account</p>
+        </div>
+      </div>
     </div>
 
     <navbar>
