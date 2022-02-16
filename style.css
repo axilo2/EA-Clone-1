@@ -614,7 +614,7 @@ navbar {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 80%;
+  width: 75%;
   margin: auto;
 }
 .card-giochi {
