@@ -197,9 +197,8 @@ navbar {
   display: flex;
   box-sizing: border-box;
   margin-top: 15px;
-  margin-left: 15vw;
   flex-wrap: nowrap;
-  justify-content: start;
+  justify-content: center;
 }
 
 .box {
