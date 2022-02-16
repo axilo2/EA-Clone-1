@@ -38,6 +38,7 @@ h2 {
 .btn:hover {
   transform: scale(1.1);
   transition: 0.3s;
+  font-size: inherit;
 }
 
 p {
@@ -49,7 +50,6 @@ p {
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 300px;
 }
 
 .alternative_btn {
@@ -230,15 +230,16 @@ img {
   background-image: url("");
 }
 
-
 .card-giochi-gradient {
-
-  background: linear-gradient(to top right, rgb(41, 41, 102), rgb(206, 54, 168));
+  background: linear-gradient(
+    to top right,
+    rgb(41, 41, 102),
+    rgb(206, 54, 168)
+  );
   width: 100%;
   height: 100%;
   opacity: 0;
   position: absolute;
-
 }
 
 .card-giochi:hover {
@@ -251,12 +252,15 @@ img {
 }
 
 .card-giochi-gradient:hover {
-  background: linear-gradient(90deg, rgba(58, 62, 129, 1) 0%, rgba(230, 122, 125, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 62, 129, 1) 0%,
+    rgba(230, 122, 125, 1) 100%
+  );
   width: 100%;
   height: 100%;
   opacity: .9;
-  position: absolute;
-
+ position: absolute;
 }
 
 .card-giochi-elementi {
@@ -264,8 +268,6 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-
 }
 
 .card-giochi-nome {
@@ -274,9 +276,8 @@ img {
 }
 
 .card-giochi:hover .card-giochi-nome {
-  transform: translateY(-35px);
+ transform: translateY(-35px);
   transition: 0.5s;
-
 }
 
 .card-giochi-testo {
