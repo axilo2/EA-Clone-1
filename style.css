@@ -367,7 +367,7 @@ navbar {
   height: 40%;
 }
 
-.img-placeholder img{
+.img-placeholder img {
   height: 100%;
   width: 100%;
   margin: 0%;
@@ -975,13 +975,21 @@ navbar {
 }
 
 /* STILE SIDEBAR*/
+
 .sidebar {
-  display: none;
+  z-index: 1;
+  width: 25%;
+  visibility: collapse;
   background-color: white;
   float: left;
   position: fixed;
   width: 22vw;
   height: 100%;
+  transition: all 1s;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .sidebar-head {
   display: flex;
