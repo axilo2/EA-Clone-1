@@ -976,57 +976,62 @@ navbar {
 
 /* STILE SIDEBAR*/
 
-.sidebar {
+#sidebar {
   z-index: 1;
-  width: 25%;
+  
   visibility: collapse;
   background-color: white;
   float: left;
   position: fixed;
-  width: 22vw;
+  width: 28vw;
   height: 100%;
   transition: all 1s;
   overflow: scroll;
 }
 ::-webkit-scrollbar {
-  display: none;
+ display: none;
 }
 .sidebar-head {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .sidebar-text {
   font-family: EA-fontbold;
   display: flex;
   justify-content: space-around;
-  margin: 30px;
-  margin-right: 60px;
+  margin-left: 0px;
+  margin-right: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .sidebar-close {
-  font-weight: bold;
-  margin-left: 110px;
+  font-weight: bolder;
+  color: #161616;
+  margin-left: 50px;
+  margin-right: 20px;
 }
 
 .sidebar-text > p {
-  font-size: 17px;
+  font-size: 19px;
   color: gray;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .placeholder-card {
   background-image: url("assets/foto-nav.767w_");
-  width: 80%;
-  height: 30%;
+  width: 78%;
+  height: 45%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .placeholder-card > img:hover {
-  width: 80px;
+  width: 110px;
 }
 
 .list-placeholder {
@@ -1038,20 +1043,22 @@ navbar {
 }
 
 .little-card {
-  width: 40%;
-  height: 10%;
+  width: 45%;
+  height: 22%;
+
 }
 
 .little-card > img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
-  margin-top: 20px;
+ align-content: center;
+ margin-left: 50px;
+    margin-top: 60px;
 }
 
 .little-card > img:hover {
-  width: 50px;
+  width: 55px;
 }
 
 .smaller-list {
