@@ -111,6 +111,54 @@ img {
   cursor: pointer;
 }
 
+#blackbar-menu-two {
+  display: flex;
+  flex-direction: column;
+}
+
+#blackbar-menu-two h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 3vh;
+}
+
+#blackbar-menu-two p a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.menu2icons {
+  display: flex;
+  flex-direction: column;
+  width: 20vh;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  margin-left: 8vh;
+}
+
+.partIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.partIcons div {
+  margin-right: 4vw;
+  margin-bottom: 4vh;
+}
+.menu2icons .blackbar-menu-icon {
+  font-size: 25px;
+}
+
+.menu2icons p {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
 navbar {
   display: flex;
   width: 100%;
@@ -613,13 +661,19 @@ navbar {
   text-align: center;
   font-family: EA-fontbold;
   font-size: 40px;
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
+
 #all-games {
+  width: 70vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15%;  
+  margin-left: 15%;
 }
 .card-giochi {
   display: flex;
@@ -631,8 +685,8 @@ navbar {
   height: 330px;
   width: 330px;
   margin-top: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15px;
+  margin-right: 9px;
 }
 
 .card-giochi-gradient {
@@ -785,6 +839,14 @@ navbar {
     left: 44%;
   }
 
+/* TABS */
+
+  .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   #sec-four {
     width: 100vw;
   }
@@ -804,7 +866,6 @@ navbar {
 
   .warnings,
   .first-footer-links {
-    width: 85%;
     white-space: nowrap;
   }
 
@@ -882,6 +943,11 @@ navbar {
 
   .warnings {
     display: none;
+    
+  }
+
+  .btn {
+    width: 90%;
   }
 
   .lists {
@@ -972,61 +1038,78 @@ navbar {
     transform: translate(-40%, 103%);
     color: white;
   }
+
+  /*Media per il bottone, quando si va in modalità mobile esso diventa largo quanto il div-giochi*/
+.btn {
+  width: 330px;
+}
+
+}
+/* TABS */
+
+.container-cards{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* STILE SIDEBAR*/
 
-.sidebar {
+#sidebar {
   z-index: 1;
-  width: 25%;
+  
   visibility: collapse;
   background-color: white;
   float: left;
   position: fixed;
-  width: 22vw;
+  width: 28vw;
   height: 100%;
   transition: all 1s;
   overflow: scroll;
 }
 ::-webkit-scrollbar {
-  display: none;
+ display: none;
 }
 .sidebar-head {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .sidebar-text {
   font-family: EA-fontbold;
   display: flex;
   justify-content: space-around;
-  margin: 30px;
-  margin-right: 60px;
+  margin-left: 0px;
+  margin-right: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .sidebar-close {
-  font-weight: bold;
-  margin-left: 110px;
+  font-weight: bolder;
+  color: #161616;
+  margin-left: 50px;
+  margin-right: 20px;
 }
 
 .sidebar-text > p {
-  font-size: 17px;
+  font-size: 19px;
   color: gray;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .placeholder-card {
   background-image: url("assets/foto-nav.767w_");
-  width: 80%;
-  height: 30%;
+  width: 78%;
+  height: 45%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .placeholder-card > img:hover {
-  width: 80px;
+  width: 110px;
 }
 
 .list-placeholder {
@@ -1038,20 +1121,22 @@ navbar {
 }
 
 .little-card {
-  width: 40%;
-  height: 10%;
+  width: 45%;
+  height: 22%;
+
 }
 
 .little-card > img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
-  margin-top: 20px;
+ align-content: center;
+ margin-left: 50px;
+    margin-top: 60px;
 }
 
 .little-card > img:hover {
-  width: 50px;
+  width: 55px;
 }
 
 .smaller-list {

@@ -1,9 +1,12 @@
 function showMenu() {
     let menuOne = document.getElementById("blackbar-menu-one");
-
+    let menuTwo = document.getElementById("blackbar-menu-two");
     if (menuOne.style.visibility === "collapse") {
+
         menuOne.style.visibility = "visible";
         menuOne.style.zIndex = "2"
+        menuTwo.style.visibility = "collapse"
+
     } else {
         menuOne.style.visibility = "collapse";
     }
@@ -23,5 +26,16 @@ function showside() {
         homepage.style.filter = ""
         homepage.style.overflowY = "hidden"
         body.style.overflowY = "scroll"
+    }
+}
+
+function showOtherMenu() {
+    let menuOne = document.getElementById("blackbar-menu-one");
+    let menuTwo = document.getElementById("blackbar-menu-two");
+    if (menuTwo.style.visibility === "collapse") {
+        menuTwo.style.visibility = "visible";
+        menuOne.style.visibility = "collapse"
+    } else {
+        menuTwo.style.visibility = "collapse";
     }
 }
