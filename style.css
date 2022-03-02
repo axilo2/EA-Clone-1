@@ -378,7 +378,7 @@ navbar {
 
 .container-cards {
   margin-top: 5vh;
-  margin-left: 5vw;
+  justify-content: center;
   margin-bottom: 5vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
