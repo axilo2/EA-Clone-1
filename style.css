@@ -661,13 +661,19 @@ navbar {
   text-align: center;
   font-family: EA-fontbold;
   font-size: 40px;
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
+
 #all-games {
+  width: 70vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15%;  
+  margin-left: 14.5%;
 }
 .card-giochi {
   display: flex;
@@ -679,8 +685,8 @@ navbar {
   height: 330px;
   width: 330px;
   margin-top: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15px;
+  margin-right: 9px;
 }
 
 .card-giochi-gradient {
@@ -1024,6 +1030,12 @@ navbar {
     transform: translate(-40%, 103%);
     color: white;
   }
+
+  /*Media per il bottone, quando si va in modalità mobile esso diventa largo quanto il div-giochi*/
+.btn {
+  width: 330px;
+}
+
 }
 
 /* STILE SIDEBAR*/
