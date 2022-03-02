@@ -785,6 +785,14 @@ navbar {
     left: 44%;
   }
 
+/* TABS */
+
+  .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   #sec-four {
     width: 100vw;
   }
@@ -972,6 +980,12 @@ navbar {
     transform: translate(-40%, 103%);
     color: white;
   }
+}
+/* TABS */
+
+.container-cards{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* STILE SIDEBAR*/
