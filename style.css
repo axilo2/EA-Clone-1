@@ -111,6 +111,54 @@ img {
   cursor: pointer;
 }
 
+#blackbar-menu-two {
+  display: flex;
+  flex-direction: column;
+}
+
+#blackbar-menu-two h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 3vh;
+}
+
+#blackbar-menu-two p a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.menu2icons {
+  display: flex;
+  flex-direction: column;
+  width: 20vh;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  margin-left: 8vh;
+}
+
+.partIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.partIcons div {
+  margin-right: 4vw;
+  margin-bottom: 4vh;
+}
+.menu2icons .blackbar-menu-icon {
+  font-size: 25px;
+}
+
+.menu2icons p {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
 navbar {
   display: flex;
   width: 100%;
@@ -804,7 +852,6 @@ navbar {
 
   .warnings,
   .first-footer-links {
-    width: 85%;
     white-space: nowrap;
   }
 
@@ -882,6 +929,11 @@ navbar {
 
   .warnings {
     display: none;
+    
+  }
+
+  .btn {
+    width: 90%;
   }
 
   .lists {
