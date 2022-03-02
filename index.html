@@ -16,7 +16,7 @@
       <div class="blackbar-nav">
         <ul class="icon-list">
           <li><ion-icon name="person-outline" class="bar-icon" onclick="showMenu()"></ion-icon></li>
-          <li><ion-icon name="help-outline" class="bar-icon"></ion-icon></li>
+          <li><ion-icon name="help-outline" class="bar-icon" onclick="showOtherMenu()"></ion-icon></li>
         </ul>
   
         <img
@@ -36,7 +36,41 @@
           <p>Crea account</p>
         </div>
       </div>
+
+      <div class="blackbar-menu" id="blackbar-menu-two">
+        <h2>Ti serve aiuto?</h2>
+
+        <div class="menu2icons">
+          <div class="partOneIcons partIcons">
+            <div class="login d-flex" id="menu-one-div">
+              <ion-icon name="invert-mode-outline" class="user-login blackbar-menu-icon"></ion-icon>
+              <p>Verifica dati di accesso a Origin</p>
+            </div>
+  
+            <div class="login d-flex" id="menu-one-div">
+              <ion-icon name="link-sharp" class="user-login blackbar-menu-icon"></ion-icon>
+              <p>Collega Origin al mio ID PSN</p>
+            </div>
+          </div>
+
+          <div class="partTwoIcons partIcons">
+            <div class="login d-flex" id="menu-one-div">
+              <ion-icon name="invert-mode-outline" class="user-login blackbar-menu-icon"></ion-icon>
+              <p>Come riscattare un codice</p>
+            </div>
+  
+            <div class="login d-flex" id="menu-one-div">
+              <ion-icon name="warning-outline" class="user-login blackbar-menu-icon"></ion-icon>
+              <p>Non riesco a giocare online</p>
+            </div>
+          </div>   
+        </div>
+
+        <p>Non hai trovato ciò che cerchi? Vai su <a href="#"> Aiuto EA</a>, <a href="#"> Answers HQ</a>  oder die <a href="#"> Forum EA</a>.</p>
+      </div>
     </div>
+
+    
 
     <navbar>
       <div class="menu" onclick="showside()">
@@ -591,5 +625,6 @@
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       ></script>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
