@@ -3,6 +3,7 @@ function showMenu() {
 
     if (menuOne.style.visibility === "collapse") {
         menuOne.style.visibility = "visible";
+        menuOne.style.zIndex = "2"
     } else {
         menuOne.style.visibility = "collapse";
     }
