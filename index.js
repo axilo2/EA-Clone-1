@@ -32,7 +32,9 @@ function showOtherMenu() {
     let menuTwo = document.getElementById("blackbar-menu-two");
     if (menuTwo.style.visibility === "collapse") {
         menuTwo.style.visibility = "visible";
+        menuTwo.style.zIndex = "2"
         menuOne.style.visibility = "collapse"
+
     } else {
         menuTwo.style.visibility = "collapse";
     }
