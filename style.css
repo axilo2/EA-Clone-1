@@ -671,9 +671,9 @@ navbar {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-right: 15%;  
-  margin-left: 14.5%;
+  margin-left: 15%;
 }
 .card-giochi {
   display: flex;
