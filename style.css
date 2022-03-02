@@ -378,16 +378,6 @@ navbar {
 }
 
 .container-cards {
-  /*margin-top: 5vh;
-  justify-content: center;
-  margin-bottom: 5vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  /*display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;*/
-
   row-gap: 20px;
   column-gap: 20px;
   width: 70vw;
