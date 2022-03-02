@@ -1,7 +1,7 @@
 function showMenu() {
-   let menuOne = document.getElementById("blackbar-menu-one");
+    let menuOne = document.getElementById("blackbar-menu-one");
     let menuTwo = document.getElementById("blackbar-menu-two");
-    if(menuOne.style.visibility === "collapse") {
+    if (menuOne.style.visibility === "collapse") {
 
         menuOne.style.visibility = "visible";
         menuTwo.style.visibility = "collapse"
@@ -30,7 +30,7 @@ function showside() {
 function showOtherMenu() {
     let menuOne = document.getElementById("blackbar-menu-one");
     let menuTwo = document.getElementById("blackbar-menu-two");
-    if(menuTwo.style.visibility === "collapse") {
+    if (menuTwo.style.visibility === "collapse") {
         menuTwo.style.visibility = "visible";
         menuOne.style.visibility = "collapse"
     } else {
