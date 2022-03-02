@@ -73,8 +73,8 @@
     
 
     <navbar>
-      <div class="menu">
-        <img src="assets/icons/more_icon.png" width="19px" alt="" />
+      <div class="menu" onclick="showside()">
+        <img src="assets/icons/more_icon.png" width="19px" alt=""  />
       </div>
       <div class="logo">
         <img src="Design_system/logoNavbar.png" alt="" width="150px"
@@ -88,7 +88,9 @@
         <div class="navElement">Risorse</div>
       </div>
     </navbar>
-    <div class="sidebar">
+
+
+    <div class="sidebar" id="sidebar">
       <div class="sidebar-head">
         <div class="sidebar-text">
           <p>Tutti i giochi</p>
@@ -127,8 +129,10 @@
         </div>
       </div>
     </div>
-    <div class="homepage">
-      <div class="mainsection">
+
+
+    <div class="homepage" id="homepage">
+     <div class="mainsection">
         <div class="background-section">
           <div class="battlefield-text">
             <div class="battlefield-text-head">
@@ -161,7 +165,7 @@
           </div>
         </div>
       </div>
-
+    
     <!--CARD-GIOCHI-->
     <div class="titolo-giochi">Giochi in evidenza</div>
   <div id="all-games">
@@ -280,8 +284,7 @@
         </div>
       </div>
   </div>
-</div>
-</div>
+
 
 <!--BOTTONE SOTTO CARD GIOCHI-->
   <div class="primary">
@@ -609,7 +612,9 @@
           </div>
         </div>
       </div>
+      </div>
 
+     </div>
       <!---Script for icons-->
       <script
         type="module"
