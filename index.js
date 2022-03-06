@@ -1,3 +1,16 @@
+
+const mediaQuery = window.matchMedia('(max-width: 1020px)')
+
+function changeSideIcon() {
+    if (window.innerWidth < 1020) {
+        document.getElementById("sideicon").src = "assets/icons/icons8-menu-24.png"
+    }
+    else {
+        document.getElementById("sideicon").src = "assets/icons/more_icon.png"
+    }
+}
+mediaQuery.addEventListener("change", changeSideIcon)
+
 function showMenu() {
     let menuOne = document.getElementById("blackbar-menu-one");
     let menuTwo = document.getElementById("blackbar-menu-two");
@@ -41,3 +54,5 @@ function showOtherMenu() {
         menuTwo.style.visibility = "collapse";
     }
 }
+
+
