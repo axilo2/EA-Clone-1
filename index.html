@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -73,24 +72,131 @@
           href="#"> Forum EA</a>.</p>
     </div>
   </div>
+    <navbar>
+      <div class="menu">
+        <img src="assets/icons/more_icon.png" width="19px" id="sideicon" onclick="showside()"/>
+      </div>
+      <div class="logo">
+        <img src="Design_system/logoNavbar.png" alt="" width="150px"
+        height="30px" />
+      </div>
+      <div class="element">
+        <div class="navElement">Giochi</div>
+        <div class="navElement">Altre esperinze</div>
+        <div class="navElement">Informazioni</div>
+        <div class="navElement">Impegni</div>
+        <div class="navElement">Risorse</div>
+      </div>
+    </navbar>
 
-
-
-  <navbar>
-    <div class="menu" onclick="showside()">
-      <img src="assets/icons/more_icon.png" width="19px" alt="" />
-    </div>
-    <div class="logo">
-      <img src="Design_system/logoNavbar.png" alt="" width="150px" height="30px" />
-    </div>
-    <div class="element">
-      <div class="navElement">Giochi</div>
-      <div class="navElement">Altre esperinze</div>
-      <div class="navElement">Informazioni</div>
-      <div class="navElement">Impegni</div>
-      <div class="navElement">Risorse</div>
-    </div>
-  </navbar>
+  
+  <nav class="sidebar sidebar-mobile py-2 mb-4" id="sidebarMobile">
+      <ul class="nav flex-column" id="nav_accordion">
+        <li class="nav-item has-submenu">
+          <a class="nav-link" href="#"> Giochi </a>
+          <ul class="submenu collapse">
+            <li>
+              <a class="nav-link trasparent" href="#">ESPLORA I GIOCHI </a>
+            </li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#">PIATTAFORME</a></li>
+          </ul>
+        </li>
+        <div class="breakline"></div>
+        <li class="nav-item has-submenu">
+          <a class="nav-link" href="#"> Altre esperienze </a>
+          <ul class="submenu collapse">
+            <li><a class="nav-link trasparent" href="#"> EA Play </a></li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Origin </a></li>
+            <div class="blackbreak"></div>
+            <li>
+              <a class="nav-link trasparent" href="#">
+                Competizioni Videoludiche
+              </a>
+            </li>
+            <div class="blackbreak"></div>
+            <li>
+              <a class="nav-link trasparent" href="#"> Diretta di EA Play </a>
+            </li>
+          </ul>
+        </li>
+        <div class="breakline"></div>
+        <li class="nav-item has-submenu">
+          <a class="nav-link" href="#"> Informazioni </a>
+          <ul class="submenu collapse">
+            <li><a class="nav-link trasparent" href="#"> Società </a></li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> EA Studi </a></li>
+            <div class="blackbreak"></div>
+            <li>
+              <a class="nav-link trasparent" href="#"> La nostra tecnologia </a>
+            </li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> EA Partners </a></li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Notizie</a></li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Inside EA </a></li>
+            <div class="blackbreak"></div>
+          </ul>
+        </li>
+        <div class="breakline"></div>
+        <li class="nav-item has-submenu">
+          <a class="nav-link" href="#"> Impegni </a>
+          <ul class="submenu collapse">
+            <li>
+              <a class="nav-link trasparent" href="#"> Gioco positivo </a>
+            </li>
+            <div class="blackbreak"></div>
+            <li>
+              <a class="nav-link trasparent" href="#">Diversità e inclusione</a>
+            </li>
+            <div class="blackbreak"></div>
+            <li>
+              <a class="nav-link trasparent" href="#">
+                Sensibilizzazione della comunità
+              </a>
+            </li>
+            <div class="blackbreak"></div>
+            <li>
+              <a class="nav-link trasparent" href="#"> Persone e cultura</a>
+            </li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Ambiente </a></li>
+            <div class="blackbreak"></div>
+          </ul>
+        </li>
+        <div class="breakline"></div>
+        <li class="nav-item has-submenu">
+          <a class="nav-link" href="#"> Risorse </a>
+          <ul class="submenu collapse">
+            <li><a class="nav-link trasparent" href="#"> Aiuto </a></li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Forum</a></li>
+            <div class="blackbreak"></div>
+            <li>
+              <a class="nav-link trasparent" href="#"> Lavora con noi </a>
+            </li>
+            <div class="blackbreak"></div>
+            <li>
+              <a class="nav-link trasparent" href="#"> Filtro Famiglia </a>
+            </li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Accessibilità </a></li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Stampa </a></li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Investitori </a></li>
+            <div class="blackbreak"></div>
+            <li><a class="nav-link trasparent" href="#"> Test di gioco </a></li>
+            <div class="blackbreak"></div>
+          </ul>
+        </li>
+        <div class="breakline"></div>
+      </ul>
+    </nav>
+  
 
 
   <div class="sidebar" id="sidebar">
@@ -135,7 +241,6 @@
         </div>
       </div>
     </div>
-  </div>
 
 
   <div class="homepage" id="homepage">
@@ -686,17 +791,27 @@
           </div>
         </div>
       </div>
+
+
+      </div>
+
+     </div>
+      <!---Script for icons-->
+          <script src="index.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
     </div>
-  </div>
-
-  </div>
-  <!---Script for icons-->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

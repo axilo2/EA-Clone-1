@@ -7,6 +7,9 @@
 img {
   max-width: 100%;
 }
+a {
+  color: black;
+}
 
 @font-face {
   font-family: EA-fontlight;
@@ -158,7 +161,6 @@ img {
   font-size: 14px;
   white-space: nowrap;
 }
-
 
 navbar {
   display: flex;
@@ -958,7 +960,6 @@ navbar {
 
   .warnings {
     display: none;
-
   }
 
   .btn {
@@ -1062,7 +1063,6 @@ navbar {
   .btn {
     width: 330px;
   }
-
 }
 
 /* TABS */
@@ -1074,9 +1074,55 @@ navbar {
 
 /* STILE SIDEBAR*/
 
+:root {
+  --sidebarcolor: rgb(237, 79, 0);
+}
+
+.sidebar-mobile li .submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sidebar-mobile {
+  z-index: 1;
+  visibility: hidden;
+  background-color: white;
+  float: left;
+  position: fixed;
+  width: 28vw;
+  height: 100%;
+  transition: all 1s;
+  overflow: scroll;
+}
+
+.nav-link {
+  color: black;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--sidebarcolor);
+}
+
+.breakline {
+  width: 90%;
+  border: solid 1px var(--sidebarcolor);
+  margin: auto;
+}
+.trasparent {
+  color: rgb(212, 210, 210);
+}
+
+.blackbreak {
+  width: 90%;
+  border: solid 0.5px rgb(212, 210, 210);
+  margin: auto;
+}
+
 #sidebar {
   z-index: 1;
-
   visibility: collapse;
   background-color: white;
   float: left;
@@ -1120,6 +1166,51 @@ navbar {
   color: gray;
   font-weight: bolder;
 }
+:root {
+  --sidebarcolor: rgb(237, 79, 0);
+}
+
+.sidebar li .submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sidebar {
+  z-index: 1;
+  background-color: white;
+  float: left;
+  position: fixed;
+  width: 28vw;
+  height: 100%;
+  transition: all 1s;
+  overflow: scroll;
+}
+
+.nav-link {
+  color: black;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--sidebarcolor);
+}
+
+.breakline {
+  width: 90%;
+  border: solid 1px var(--sidebarcolor);
+  margin: auto;
+}
+.trasparent {
+  color: rgb(212, 210, 210);
+}
+
+.blackbreak {
+  width: 90%;
+  border: solid 0.5px rgb(212, 210, 210);
+  margin: auto;
+}
 
 .placeholder-card {
   background-image: url("assets/foto-nav.767w_");
@@ -1146,7 +1237,6 @@ navbar {
 .little-card {
   width: 45%;
   height: 22%;
-
 }
 
 .little-card>img {
