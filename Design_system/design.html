@@ -12,137 +12,282 @@
 </head>
 
 <body>
+  <h1 class="title">Design system - EA SITE</h1>
+
+  <div class="all">
+    <!---- Div che contiene tutti gli elementi ---->
+
+    <!---- Buttons ---->
+    <div id="buttons">
+
+      <h1 class="buttons-title">Buttons</h1>
+      <p style="font-size: 20px; margin-left: 8%;">
+        Set of buttons used in site design EA. These custom button styles are used for actions in forms, dialogs, and
+        <br>
+        more with support for multiple sizes, states, and more.</p>
 
 
+      <!---- Primary Button---->
+      <div class="single-button">
+        <div class="primary">
+          <div class="default">
+            <button class="btn">Primary</button>
 
+          </div>
+        </div>
+        <textarea style="width: 441px; height: 125px;">
 
-  <!---- Buttons ---->
-  <div id="buttons">
-    <h2>Buttons</h2>
-    <div class="primary">
-      <div class="default">
-        <button class="btn">Primary</button>
+          <div class="primary">
+          <div class="default">
+            <button class="btn">Primary</button>
+          </div>
+        </div>
 
-        <p>Primary</p>
-
+      </textarea>
       </div>
-    </div>
 
-    <div class="alternative">
-      <div class="default">
-        <button class="btn alternative_btn">Alternative</button>
+      <!---- Alternative  Button ---->
+      <div class="single-button">
+        <div class="alternative">
+          <div class="default">
+            <button class="btn alternative_btn">Alternative</button>
+          </div>
+        </div>
+        <textarea style="width: 441px; height: 125px;">
 
-        <p>Alternative</p>
-
+          <div class="alternative">
+          <div class="default">
+            <button class="btn alternative_btn">Alternative</button>
+          </div>
+        </div>
+    </textarea>
       </div>
-    </div>
 
-    <div class="vote">
-      <div class="default">
-        <button class="btn vote_btn">Vote</button>
+      <!---- Vote  Button ---->
+      <div class="single-button">
+        <div class="vote">
+          <div class="default">
+            <button class="btn vote_btn">Vote</button>
+          </div>
+        </div>
+        <textarea style="width: 441px; height: 125px;">
 
-        <p>Vote</p>
-
+          <div class="button-vote">
+            <div class="vote">
+              <div class="default">
+                <button class="btn vote_btn">Vote</button>
+              </div>
+            </div>     
+         </textarea>
       </div>
-    </div>
 
-    <div class="vote-result alternative">
-      <div class="default">
-        <button class="btn result_btn">Result</button>
+      <!---- Vote Result Button ---->
+      <div class="single-button">
+        <div class="vote-result alternative">
+          <div class="default">
+            <button class="btn result_btn">Result</button>
+          </div>
+        </div>
+        <textarea style="width: 441px; height: 125px;">
 
-        <p>Vote Result</p>
+          <div class="button-vote-result">
+            <div class="vote-result alternative">
+              <div class="default">
+                <button class="btn result_btn">Result</button>
+              </div>
+            </div>
+         </textarea>
       </div>
-    </div>
 
-    <!--Font -->
-    <div class="font">
-      <h3>TYPOGRAPHY</h3>
-      <h3>Header</h3>
-      <p>EA-fontbold-18.72 px</p>
 
-      <h4>Header Alternate</h4>
-      <p>EA-fontregular-16 px</p>
 
-      <h5>Button Text</h5>
-      <p>EA-fontlight-13.28 px</p>
+      <!--Font -->
+      <div class="font">
+        <h1 class="font-title">Typography</h1>
+        <p style="font-size: 20px; margin-left: 8%;"> For the typography of the site special fonts were used,
+          "ElectronicArtsText".
+          The font is a graphical representation <br> of text that may include a different typeface, point size, weight,
+          color, or design.</p>
 
-      <h6>Paragraph</h6>
-      <p>EA-fontregular-10px</p>
-    </div>
+        <!--Font Bold -->
+        <div class="font-style">
+          <h2>Header</h2>
+          <textarea style="width: 350px; height: 95px;">
 
-    <!--Logos-->
-    <div class="logo">
-      <h3>LOGOS</h3>
-      <h4>Primary</h4>
-      <img src="Electronic-Arts-LogoPrimary.png" alt="logoprimary" height="100px" width="200px" />
+            h1 {
+            font-family: EA-fontbold;
+            font-size: 18px
+          }
+        </textarea>
+        </div>
+        <!--Font Regular -->
+        <div class="font-style">
+          <h3>Header Alternative</h3>
+          <textarea style="width: 350px; height: 95px;">
 
-      <h4>Secondary</h4>
-      <img src="logo.png" height="30px" alt="logosecondary" />
-      <img src="logosecondario.png.png" height="30px" alt="logosecondary" />
-      <img src="easports.png.png" height="30px" alt="" />
-    </div>
+            h2 {
+            font-family: EA-fontregular;
+            font-size: 16px
+          }
+        </textarea>
+        </div>
 
-    <div></div>
+        <!--Font Light -->
+        <div class="font-style">
+          <h5>Button Text</h5>
+          <textarea style="width: 350px; height: 95px;">
 
-    <div></div>
+            p {
+            font-family: EA-fontlight;
+            font-size: 13px
+          }
+        </textarea>
+        </div>
 
-    <!--Colors-->
+        <!--Font Light Paragraph -->
+        <div class="font-style">
+          <h6>Paragraph</h6>
+          <textarea style="width: 350px; height: 95px;">
 
-    <div class="container">
-      <h1>Colors</h1>
+            p {
+          font-family: EA-regular;
+          font-size: 10px
+             }
+          </textarea>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!--Logos-->
+
+
+      <h1 class="font-title">Logos</h1>
+      <p style="font-size: 20px; margin-left: 8%;">A logo is a symbol made up of text and images that identifies a
+        business. A good logo shows what
+        <br> a company does and what the brand values.</p>
+      <div class="logo">
+        <div class="font-style">
+          <h4>Primary Logo</h4>
+          <img src="Electronic-Arts-LogoPrimary.png" alt="logoprimary" height="100px" width="200px" />
+        </div>
+
+        <div class="font-style">
+          <h4>Secondary Logo</h4>
+          <img src="logo.png" height="30px" alt="logosecondary" />
+          <img src="logosecondario.png.png" height="30px" alt="logosecondary" />
+          <img src="easports.png.png" height="30px" alt="" />
+        </div>
+      </div>
+
+
+      <!--Colors-->
+
       <div class="container">
+        <h1 class="font-title">Colors</h1>
+        <p style="font-size: 20px; margin-left: 8%;">The main three colors used in the design of the site</p>
+
+
         <div class="color">
           <div class="color red"></div>
-          <p>Main red: #ff4747</p>
+          <textarea style="width: 350px; height: 95px;">
+              .red {
+               background-color: #ff4747;
+              }
+             </textarea>
         </div>
+
         <div class="color">
           <div class="color blue"></div>
-          <p>Main blue: #6fb0d6</p>
+          <textarea style="width: 350px; height: 95px;">
+            .blue {
+             background-color: #6fb0d6;
+            }
+           </textarea>
         </div>
 
         <div class="color">
           <div class="color gray"></div>
-          <p>gray background: #f3f3f3</p>
-        </div>
-      </div>
-    </div>
-
-    <!--Schede-->
-    <div class="card-container">
-      <h2>Cards</h2>
-
-      <div id="card">
-        <div class="img-placeholder"></div>
-        <div class="card-body">
-
-          <div class="card-header">
-            <img src="/Design_system/Electronic-Arts-LogoPrimary.png" alt="Logo">
-
-            <p class="date">21-gen-2022</p>
-          </div>
-
-          <div class="card-text">
-            <h3>Lorem Ipsum</h3>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          </div>
+          <textarea style="width: 350px; height: 95px;">
+            .gray  #f3f3f3 {
+             background-color: #ff4747;
+            }
+           </textarea>
         </div>
 
       </div>
-    </div>
+
+      <!--Schede-->
+      <div class="card-container">
+        <h1 class="font-title" style="margin-top: 15%;">Cards</h1>
+        <p style="font-size: 20px; margin-left: 8%;">Container with multiple variants and options.</p>
+        <div class="card-elements">
+          <div id="card">
+            <div class="img-placeholder"></div>
+            <div class="card-body">
+
+              <div class="card-header">
+                <img src="/Design_system/Electronic-Arts-LogoPrimary.png" alt="Logo">
+
+                <p class="date">21-gen-2022</p>
+              </div>
+
+              <div class="card-text">
+                <h3>Lorem Ipsum</h3>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+          </div>
+          <textarea style="width: 705px; height: 259px; margin-top: 10px;">
+          <div id="card">
+            <div class="img-placeholder"></div>
+            <div class="card-body">
+  
+              <div class="card-header">
+                <img src="/Design_system/Electronic-Arts-LogoPrimary.png" alt="Logo">
+  
+                <p class="date">21-gen-2022</p>
+              </div>
+  
+              <div class="card-text">
+                <h3>Lorem Ipsum</h3>
+  
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+        </textarea>
+        </div>
+      </div>
 
 
-    <!--CARD-GIOCHI-->
-    <div class="card-giochi">
-      <div class="card-giochi-gradient"></div>
-      <div class="card-giochi-elementi">
-          <div class="card-giochi-nome">
+      <!--CARD-GIOCHI-->
+      <div class="card-elements">
+        <div class="card-giochi">
+          <div class="card-giochi-gradient"></div>
+          <div class="card-giochi-elementi">
+            <div class="card-giochi-nome">
               <h3>Name of the game</h3>
+            </div>
+            <p class="card-giochi-testo">Official Site</p>
           </div>
-          <p class="card-giochi-testo">Official Site</p>
+        </div>
+        <textarea style="width: 656px; height: 159px; margin-top: 10px;">
+          <div class="card-giochi">
+            <div class="card-giochi-gradient"></div>
+            <div class="card-giochi-elementi">
+              <div class="card-giochi-nome">
+                <h3>Name of the game</h3>
+              </div>
+              <p class="card-giochi-testo">Official Site</p>
+            </div>
+        </textarea>
       </div>
 
-    
 
 
 

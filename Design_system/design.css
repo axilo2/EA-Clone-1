@@ -6,13 +6,41 @@
   --gray: #f3f3f3;
 }
 
+body {
+  background-color: #eceaea;
+}
+
+
 /* Buttons */
+#buttons {
+
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  margin: 5%;
+}
+
+.buttons-title {
+  margin-left: 20%;
+}
+
+p {
+  font-family: EA-fontregular;
+  font-size: 50px;
+}
 
 h2 {
   margin-bottom: 10px;
 }
 
-.primary {
+.single-button {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+.button-alternative .primary {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -48,20 +76,25 @@ p {
 
 .alternative {
   display: flex;
-  justify-content: center;
+
   height: 100%;
 }
 
+
+
 .alternative_btn {
   border: solid 2px white;
-  color: white;
+  color: rgb(255, 255, 255);
 }
+
+
 
 .vote_btn {
   background: var(--red);
   border: solid 2px var(--red);
   color: white;
 }
+
 
 .result_btn {
   background-color: white;
@@ -91,6 +124,17 @@ p {
   src: url(ElectronicArtsText-Regular.woff2);
 }
 
+.font-style {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+.font-title {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+h1,
 h3,
 h4 {
   font-family: EA-fontbold;
@@ -112,6 +156,13 @@ img {
   margin: 10px;
 }
 
+/*LOGO STYLE*/
+
+.logo {
+  display: flex;
+
+}
+
 /* Colors */
 
 /*.container {
@@ -127,6 +178,7 @@ img {
   padding: 10px 10px 0px 10px;
   height: 30px;
   width: 80px;
+  margin: 10%;
 }
 
 .color p {
@@ -146,6 +198,7 @@ img {
 
 .gray {
   background-color: var(--gray);
+  border: 1px solid;
 }
 
 /* Cards */
@@ -216,6 +269,14 @@ img {
   margin-top: 0;
 }
 
+.card-elements {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+
+
+}
+
 /* Cards-Giochi */
 .card-giochi {
   display: flex;
@@ -231,11 +292,9 @@ img {
 }
 
 .card-giochi-gradient {
-  background: linear-gradient(
-    to top right,
-    rgb(41, 41, 102),
-    rgb(206, 54, 168)
-  );
+  background: linear-gradient(to top right,
+      rgb(41, 41, 102),
+      rgb(206, 54, 168));
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -252,15 +311,13 @@ img {
 }
 
 .card-giochi-gradient:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(58, 62, 129, 1) 0%,
-    rgba(230, 122, 125, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(58, 62, 129, 1) 0%,
+      rgba(230, 122, 125, 1) 100%);
   width: 100%;
   height: 100%;
   opacity: .9;
- position: absolute;
+  position: absolute;
 }
 
 .card-giochi-elementi {
@@ -276,7 +333,7 @@ img {
 }
 
 .card-giochi:hover .card-giochi-nome {
- transform: translateY(-35px);
+  transform: translateY(-35px);
   transition: 0.5s;
 }
 
@@ -295,4 +352,8 @@ img {
   align-items: center;
   justify-content: center;
   margin-left: 30px;
+}
+
+.giochi {
+  display: flex;
 }
