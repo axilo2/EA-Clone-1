@@ -824,35 +824,9 @@ navbar {
 }
 
 /*STILE BOTTONE SOTTO GIOCHI*/
-.primario {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
+.primary {
   margin-top: 30px;
   align-items: center;
-}
-
-.defaultt {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.btn-primario {
-  height: 3.438rem;
-  width: 9.688rem;
-  background: inherit;
-  border: solid 2px;
-  border-radius: 3px;
-  font-size: 18px;
-  transition: 0.3s;
-  font-display: center;
-}
-
-.btn-primario:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-  font-size: inherit;
 }
 
 @media screen and (max-width: 1020px) {
@@ -986,7 +960,6 @@ navbar {
 
   .warnings {
     display: none;
-
   }
 
   .btn {
@@ -1087,13 +1060,10 @@ navbar {
   }
 
   /*Media per il bottone, quando si va in modalità mobile esso diventa largo quanto il div-giochi*/
-
-  .btn-primario {
+  .btn {
     width: 330px;
   }
-
 }
-
 
 /* TABS */
 
@@ -1153,7 +1123,6 @@ navbar {
 
 #sidebar {
   z-index: 1;
-
   visibility: collapse;
   background-color: white;
   float: left;
@@ -1278,7 +1247,6 @@ navbar {
   margin-left: 50px;
   margin-top: 60px;
 }
-
 
 .little-card:hover>img {
   width: 69px;
