@@ -69,7 +69,6 @@ p {
 }
 
 .alternative {
-
   height: 100%;
 }
 
@@ -148,7 +147,6 @@ img {
 .logo {
   display: flex;
 }
-
 
 /* Colors */
 
@@ -262,7 +260,6 @@ img {
   margin-left: 10%;
 }
 
-
 /* Cards-Giochi */
 .card-giochi {
   display: flex;
@@ -278,9 +275,11 @@ img {
 }
 
 .card-giochi-gradient {
-  background: linear-gradient(to top right,
-      rgb(41, 41, 102),
-      rgb(206, 54, 168));
+  background: linear-gradient(
+    to top right,
+    rgb(41, 41, 102),
+    rgb(206, 54, 168)
+  );
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -297,12 +296,14 @@ img {
 }
 
 .card-giochi-gradient:hover {
-  background: linear-gradient(90deg,
-      rgba(58, 62, 129, 1) 0%,
-      rgba(230, 122, 125, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 62, 129, 1) 0%,
+    rgba(230, 122, 125, 1) 100%
+  );
   width: 100%;
   height: 100%;
-  opacity: .9;
+  opacity: 0.9;
   position: absolute;
 }
 
