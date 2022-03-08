@@ -7,6 +7,7 @@
 img {
   max-width: 100%;
 }
+
 a {
   color: black;
 }
@@ -829,6 +830,13 @@ navbar {
   align-items: center;
 }
 
+.fix-buttons {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  margin-left: 45%;
+}
+
 @media screen and (max-width: 1020px) {
   .logo {
     transform: scale(0.8);
@@ -1063,6 +1071,10 @@ navbar {
   .btn {
     width: 330px;
   }
+
+  .fix-buttons {
+    margin-left: 25%;
+  }
 }
 
 /* TABS */
@@ -1101,6 +1113,7 @@ navbar {
 .nav-link {
   color: black;
 }
+
 .nav-link:focus,
 .nav-link:hover {
   color: var(--sidebarcolor);
@@ -1111,6 +1124,7 @@ navbar {
   border: solid 1px var(--sidebarcolor);
   margin: auto;
 }
+
 .trasparent {
   color: rgb(212, 210, 210);
 }
@@ -1166,6 +1180,7 @@ navbar {
   color: gray;
   font-weight: bolder;
 }
+
 :root {
   --sidebarcolor: rgb(237, 79, 0);
 }
@@ -1192,6 +1207,7 @@ navbar {
 .nav-link {
   color: black;
 }
+
 .nav-link:focus,
 .nav-link:hover {
   color: var(--sidebarcolor);
@@ -1202,6 +1218,7 @@ navbar {
   border: solid 1px var(--sidebarcolor);
   margin: auto;
 }
+
 .trasparent {
   color: rgb(212, 210, 210);
 }
