@@ -1,4 +1,3 @@
-
 const mediaQuery = window.matchMedia('(max-width: 1020px)')
 const sideicon = document.querySelector("#sideicon")
 let sidebarmobile = document.querySelector('#sidebarMobile')
