@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="design.css" />
 </head>
 
-<body style="background-color:  #f0c083">
+<body>
   <h1 class="title">Design system - EA SITE</h1>
 
   <div class="all">
@@ -167,7 +167,8 @@
 
       <h1 class="font-title">Logos</h1>
       <p style="font-size: 20px; margin-left: 8%;">A logo is a symbol made up of text and images that identifies a
-        business. A good logo shows what a company does and what the brand values.</p>
+        business. A good logo shows what
+        <br> a company does and what the brand values.</p>
       <div class="logo">
         <div class="font-style">
           <h4>Primary Logo</h4>
@@ -186,65 +187,112 @@
       <!--Colors-->
 
       <div class="container">
-        <h1>Colors</h1>
-        <div class="container">
-          <div class="color">
-            <div class="color red"></div>
-            <p>Main red: #ff4747</p>
-          </div>
-          <div class="color">
-            <div class="color blue"></div>
-            <p>Main blue: #6fb0d6</p>
-          </div>
+        <h1 class="font-title">Colors</h1>
+        <p style="font-size: 20px; margin-left: 8%;">The main three colors used in the design of the site</p>
 
-          <div class="color">
-            <div class="color gray"></div>
-            <p>gray background: #f3f3f3</p>
-          </div>
+
+        <div class="color">
+          <div class="color red"></div>
+          <textarea style="width: 350px; height: 95px;">
+              .red {
+               background-color: #ff4747;
+              }
+             </textarea>
         </div>
+
+        <div class="color">
+          <div class="color blue"></div>
+          <textarea style="width: 350px; height: 95px;">
+            .blue {
+             background-color: #6fb0d6;
+            }
+           </textarea>
+        </div>
+
+        <div class="color">
+          <div class="color gray"></div>
+          <textarea style="width: 350px; height: 95px;">
+            .gray  #f3f3f3 {
+             background-color: #ff4747;
+            }
+           </textarea>
+        </div>
+
       </div>
 
       <!--Schede-->
       <div class="card-container">
-        <h2>Cards</h2>
+        <h1 class="font-title" style="margin-top: 15%;">Cards</h1>
+        <p style="font-size: 20px; margin-left: 8%;">Container with multiple variants and options.</p>
+        <div class="card-elements">
+          <div id="card">
+            <div class="img-placeholder"></div>
+            <div class="card-body">
 
-        <div id="card">
-          <div class="img-placeholder"></div>
-          <div class="card-body">
+              <div class="card-header">
+                <img src="/Design_system/Electronic-Arts-LogoPrimary.png" alt="Logo">
 
-            <div class="card-header">
-              <img src="/Design_system/Electronic-Arts-LogoPrimary.png" alt="Logo">
+                <p class="date">21-gen-2022</p>
+              </div>
 
-              <p class="date">21-gen-2022</p>
+              <div class="card-text">
+                <h3>Lorem Ipsum</h3>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
             </div>
 
-            <div class="card-text">
-              <h3>Lorem Ipsum</h3>
-
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
           </div>
-
+          <textarea style="width: 705px; height: 259px; margin-top: 10px;">
+          <div id="card">
+            <div class="img-placeholder"></div>
+            <div class="card-body">
+  
+              <div class="card-header">
+                <img src="/Design_system/Electronic-Arts-LogoPrimary.png" alt="Logo">
+  
+                <p class="date">21-gen-2022</p>
+              </div>
+  
+              <div class="card-text">
+                <h3>Lorem Ipsum</h3>
+  
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+        </textarea>
         </div>
       </div>
 
 
       <!--CARD-GIOCHI-->
-      <div class="card-giochi">
-        <div class="card-giochi-gradient"></div>
-        <div class="card-giochi-elementi">
-          <div class="card-giochi-nome">
-            <h3>Name of the game</h3>
+      <div class="card-elements">
+        <div class="card-giochi">
+          <div class="card-giochi-gradient"></div>
+          <div class="card-giochi-elementi">
+            <div class="card-giochi-nome">
+              <h3>Name of the game</h3>
+            </div>
+            <p class="card-giochi-testo">Official Site</p>
           </div>
-          <p class="card-giochi-testo">Official Site</p>
         </div>
-
-
-
-
-
-
+        <textarea style="width: 656px; height: 159px; margin-top: 10px;">
+          <div class="card-giochi">
+            <div class="card-giochi-gradient"></div>
+            <div class="card-giochi-elementi">
+              <div class="card-giochi-nome">
+                <h3>Name of the game</h3>
+              </div>
+              <p class="card-giochi-testo">Official Site</p>
+            </div>
+        </textarea>
       </div>
+
+
+
+
+
+
 
 </body>
 

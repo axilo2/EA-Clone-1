@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f0c083;
+  background-color: #eceaea;
 }
 
 
@@ -178,6 +178,7 @@ img {
   padding: 10px 10px 0px 10px;
   height: 30px;
   width: 80px;
+  margin: 10%;
 }
 
 .color p {
@@ -197,6 +198,7 @@ img {
 
 .gray {
   background-color: var(--gray);
+  border: 1px solid;
 }
 
 /* Cards */
@@ -265,6 +267,14 @@ img {
   font-size: 18px;
   margin-left: 0;
   margin-top: 0;
+}
+
+.card-elements {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+
+
 }
 
 /* Cards-Giochi */
@@ -342,4 +352,8 @@ img {
   align-items: center;
   justify-content: center;
   margin-left: 30px;
+}
+
+.giochi {
+  display: flex;
 }

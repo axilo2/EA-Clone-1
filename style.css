@@ -149,6 +149,7 @@ img {
   margin-right: 4vw;
   margin-bottom: 4vh;
 }
+
 .menu2icons .blackbar-menu-icon {
   font-size: 25px;
 }
@@ -185,9 +186,11 @@ navbar {
   display: flex;
   padding: 15px;
 }
+
 .mainsection {
   height: 80vh;
 }
+
 .background-section {
   background-image: url("Design_system/imgEA.png");
   height: 80%;
@@ -196,6 +199,7 @@ navbar {
   background-size: cover;
   position: relative;
 }
+
 .battlefield-text {
   text-align: center;
   position: absolute;
@@ -220,11 +224,9 @@ navbar {
 .gradientbar {
   width: 100vw;
   height: 10vh;
-  background-image: linear-gradient(
-    to right,
-    rgba(13, 16, 66, 255),
-    rgba(128, 44, 68, 255)
-  );
+  background-image: linear-gradient(to right,
+      rgba(13, 16, 66, 255),
+      rgba(128, 44, 68, 255));
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -386,7 +388,7 @@ navbar {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-right: 15%;  
+  margin-right: 15%;
   margin-left: 15%;
 }
 
@@ -661,7 +663,7 @@ navbar {
 
 /*CARD GIOCHI*/
 .titolo-giochi,
-.tab-title > h1 {
+.tab-title>h1 {
   text-align: center;
   font-family: EA-fontbold;
   font-size: 40px;
@@ -676,9 +678,10 @@ navbar {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-right: 15%;  
+  margin-right: 15%;
   margin-left: 15%;
 }
+
 .card-giochi {
   display: flex;
   align-items: center;
@@ -694,11 +697,9 @@ navbar {
 }
 
 .card-giochi-gradient {
-  background: linear-gradient(
-    to top right,
-    rgb(41, 41, 102),
-    rgb(206, 54, 168)
-  );
+  background: linear-gradient(to top right,
+      rgb(41, 41, 102),
+      rgb(206, 54, 168));
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -712,9 +713,11 @@ navbar {
   width: 330px;
   margin-top: 10px;
 }
+
 #card-giochi-primo {
   background-image: url("assets/battlefield-img.jpg");
 }
+
 #card-giochi-primo:hover {
   background-image: url("assets/battlefield-img.jpg");
 }
@@ -722,6 +725,7 @@ navbar {
 #card-giochi-secondo {
   background-image: url("assets/fifa22.jpg");
 }
+
 #card-giochi-secondo:hover {
   background-image: url("assets/fifa22.jpg");
 }
@@ -729,6 +733,7 @@ navbar {
 #card-giochi-terzo {
   background-image: url("assets/ittakestwo.jpg");
 }
+
 #card-giochi-terzo:hover {
   background-image: url("assets/ittakestwo.jpg");
 }
@@ -736,6 +741,7 @@ navbar {
 #card-giochi-quarto {
   background-image: url("assets/needforspeed.jpg");
 }
+
 #card-giochi-quarto:hover {
   background-image: url("assets/needforspeed.jpg");
 }
@@ -743,6 +749,7 @@ navbar {
 #card-giochi-quinto {
   background-image: url("assets/apex1.jpg");
 }
+
 #card-giochi-quinto:hover {
   background-image: url("assets/apex1.jpg");
 }
@@ -750,6 +757,7 @@ navbar {
 #card-giochi-sesto {
   background-image: url("assets/sims4.jpg");
 }
+
 #card-giochi-sesto:hover {
   background-image: url("assets/sims4.jpg");
 }
@@ -760,11 +768,9 @@ navbar {
 }
 
 .card-giochi-gradient:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(58, 62, 129, 1) 0%,
-    rgba(230, 122, 125, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(58, 62, 129, 1) 0%,
+      rgba(230, 122, 125, 1) 100%);
   width: 100%;
   height: 100%;
   opacity: 0.9;
@@ -816,9 +822,35 @@ navbar {
 }
 
 /*STILE BOTTONE SOTTO GIOCHI*/
-.primary {
+.primario {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
   margin-top: 30px;
   align-items: center;
+}
+
+.defaultt {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-primario {
+  height: 3.438rem;
+  width: 9.688rem;
+  background: inherit;
+  border: solid 2px;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: 0.3s;
+  font-display: center;
+}
+
+.btn-primario:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  font-size: inherit;
 }
 
 @media screen and (max-width: 1020px) {
@@ -826,26 +858,30 @@ navbar {
     transform: scale(0.8);
     transition: 1s;
   }
+
   .element {
     display: none;
   }
+
   .gradientbar {
     height: auto;
     display: flex;
     flex-direction: column;
   }
+
   .background-section {
     background-image: url("Design_system/imgEA-medium.png");
   }
+
   .battlefield-text {
     margin-left: unset;
     font-size: smaller;
     left: 44%;
   }
 
-/* TABS */
+  /* TABS */
 
-  .container-cards{
+  .container-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -893,6 +929,7 @@ navbar {
   .footer-media p {
     margin-left: auto;
   }
+
   .footer-media,
   .icons {
     margin-top: 1.25rem;
@@ -947,7 +984,7 @@ navbar {
 
   .warnings {
     display: none;
-    
+
   }
 
   .btn {
@@ -1016,17 +1053,21 @@ navbar {
     align-items: center;
     justify-content: center;
   }
+
   .mainsection {
     height: 60vh;
   }
+
   .background-section {
     background-image: url("Design_system/imgEA-small.png");
     height: 50%;
   }
+
   .gradientbar {
     position: relative;
     top: 40%;
   }
+
   .battlefield-text {
     display: flex;
     padding-left: 20%;
@@ -1044,14 +1085,15 @@ navbar {
   }
 
   /*Media per il bottone, quando si va in modalità mobile esso diventa largo quanto il div-giochi*/
-.btn {
-  width: 330px;
-}
+  .btn-primario {
+    width: 330px;
+  }
 
 }
+
 /* TABS */
 
-.container-cards{
+.container-cards {
   display: flex;
   flex-wrap: wrap;
 }
@@ -1060,7 +1102,7 @@ navbar {
 
 #sidebar {
   z-index: 1;
-  
+
   visibility: collapse;
   background-color: white;
   float: left;
@@ -1070,9 +1112,11 @@ navbar {
   transition: all 1s;
   overflow: scroll;
 }
+
 ::-webkit-scrollbar {
- display: none;
+  display: none;
 }
+
 .sidebar-head {
   display: flex;
   flex-direction: row;
@@ -1097,7 +1141,7 @@ navbar {
   margin-right: 20px;
 }
 
-.sidebar-text > p {
+.sidebar-text>p {
   font-size: 19px;
   color: gray;
   font-weight: bolder;
@@ -1112,7 +1156,8 @@ navbar {
   align-items: center;
   justify-content: center;
 }
-.placeholder-card > img:hover {
+
+.placeholder-card>img:hover {
   width: 110px;
 }
 
@@ -1130,16 +1175,16 @@ navbar {
 
 }
 
-.little-card > img {
+.little-card>img {
   display: flex;
   justify-content: center;
   align-items: center;
- align-content: center;
- margin-left: 50px;
-    margin-top: 60px;
+  align-content: center;
+  margin-left: 50px;
+  margin-top: 60px;
 }
 
-.little-card > img:hover {
+.little-card>img:hover {
   width: 55px;
 }
 
