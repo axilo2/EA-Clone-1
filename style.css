@@ -1075,14 +1075,53 @@ navbar {
   .fix-buttons {
     margin-left: 25%;
   }
+
+    /* TABS */
+
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img-placeholder{
+    width: 100%;
+    height: 40%;
+    display: none;
+  }
+
+  #card{
+    width: 100vw;
+    height: auto;
+    background: white;
+  }
+
+  .card-header{
+    background: inherit;
+    margin-top: 20px;
+  }
+
+  .card-header img{
+    display: none;
+  }
+
+  .card-header p{
+    text-align: center;
+  }
+
+  .card-header p::before{
+    content: "Electronic Arts Inc.";
+    position: relative;
+    bottom: 20px;
+    left: 110px;
+    color: #f44336;
+  }
+
+  .card-text p{
+    display: none;
+  }
+
 }
 
-/* TABS */
-
-.container-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 /* STILE SIDEBAR*/
 
